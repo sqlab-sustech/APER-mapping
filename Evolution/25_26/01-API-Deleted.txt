@@ -1,0 +1,15 @@
+android.accounts.AccountManager.addOnAccountsUpdatedListener(android.accounts.OnAccountsUpdateListener,android.os.Handler,boolean)void :: android.permission.GET_ACCOUNTS
+android.accounts.AccountManager.getAccounts()android.accounts.Account[] :: android.permission.GET_ACCOUNTS
+android.accounts.AccountManager.getAccountsAsUser(int)android.accounts.Account[] :: android.permission.GET_ACCOUNTS
+android.bluetooth.BluetoothAdapter.configHciSnoopLog(boolean)boolean :: android.permission.BLUETOOTH_ADMIN
+android.bluetooth.BluetoothGatt.registerApp(android.bluetooth.BluetoothGattCallback)boolean :: android.permission.BLUETOOTH
+android.content.pm.PackageManager.getEphemeralApplications()java.util.List<android.content.pm.EphemeralApplicationInfo> :: android.permission.ACCESS_EPHEMERAL_APPS
+android.location.LocationManager.addNmeaListener(android.location.GnssNmeaListener)boolean :: android.permission.ACCESS_FINE_LOCATION
+android.location.LocationManager.addNmeaListener(android.location.GnssNmeaListener,android.os.Handler)boolean :: android.permission.ACCESS_FINE_LOCATION
+android.location.LocationManager.registerGnssNavigationMessageCallback(android.location.GnssNavigationMessageEvent$Callback,android.os.Handler)boolean :: android.permission.ACCESS_FINE_LOCATION
+android.location.LocationManager.registerGnssStatusCallback(android.location.GnssStatusCallback)boolean :: android.permission.ACCESS_FINE_LOCATION
+android.location.LocationManager.registerGnssStatusCallback(android.location.GnssStatusCallback,android.os.Handler)boolean :: android.permission.ACCESS_FINE_LOCATION
+android.net.NetworkScoreManager.registerNetworkScoreCache(int,android.net.INetworkScoreCache)void :: android.permission.BROADCAST_NETWORK_PRIVILEGED
+android.net.NetworkScoreManager.requestScores(android.net.NetworkKey[])boolean :: android.permission.BROADCAST_NETWORK_PRIVILEGED
+android.net.NetworkScorerAppManager.getAllValidScorers(android.content.Context)java.util.Collection<android.net.NetworkScorerAppManager.NetworkScorerAppData> :: android.permission.SCORE_NETWORKS, android.permission.BROADCAST_NETWORK_PRIVILEGED
+android.telephony.TelephonyManager.iccOpenLogicalChannel(int,java.lang.String)android.telephony.IccOpenLogicalChannelResponse :: android.permission.MODIFY_PHONE_STATE

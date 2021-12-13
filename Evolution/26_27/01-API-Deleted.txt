@@ -1,0 +1,8 @@
+android.app.DownloadManager$Request.setDestinationToSystemCache()android.app.DownloadManager.Request :: android.permission.ACCESS_CACHE_FILESYSTEM
+android.content.pm.PackageInstaller.uninstall(android.content.pm.VersionedPackage,android.content.IntentSender)void :: android.permission.DELETE_PACKAGES, android.permission.REQUEST_DELETE_PACKAGES :: anyOf
+android.net.ConnectivityManager.getActiveNetworkQuotaInfo()android.net.NetworkQuotaInfo :: android.permission.ACCESS_NETWORK_STATE
+android.os.RecoverySystem.rebootWipeUserData(android.content.Context,boolean,java.lang.String,boolean)void :: android.permission.REBOOT
+android.telephony.TelephonyManager.setSimPowerState(boolean)void :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.setSimPowerStateForSlot(int,boolean)void :: android.permission.MODIFY_PHONE_STATE
+android.view.WindowManagerPolicy$WindowState.canAddInternalSystemWindow()boolean :: android.permission.INTERNAL_SYSTEM_WINDOW
+android.view.WindowManagerPolicy.getWindowLayerFromTypeLw(int,boolean)int :: android.permission.INTERNAL_SYSTEM_WINDOW

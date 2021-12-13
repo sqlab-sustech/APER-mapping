@@ -1,0 +1,47 @@
+android.app.AppOpsManager.setUidMode(java.lang.String,int,int)void
+Before: android.permission.UPDATE_APP_OPS_STATS
+Now: android.permission.MANAGE_APP_OPS_MODES
+
+android.hardware.fingerprint.FingerprintManager.authenticate(android.hardware.fingerprint.FingerprintManager$CryptoObject,android.os.CancellationSignal,int,android.hardware.fingerprint.FingerprintManager$AuthenticationCallback,android.os.Handler)void
+Before: android.permission.USE_FINGERPRINT
+Now: android.permission.USE_FINGERPRINT, android.permission.USE_BIOMETRIC :: anyOf
+
+android.hardware.fingerprint.FingerprintManager.authenticate(android.hardware.fingerprint.FingerprintManager$CryptoObject,android.os.CancellationSignal,int,android.hardware.fingerprint.FingerprintManager$AuthenticationCallback,android.os.Handler,int)void
+Before: android.permission.USE_FINGERPRINT
+Now: android.permission.USE_FINGERPRINT, android.permission.USE_BIOMETRIC :: anyOf
+
+android.net.NetworkScoreManager.clearScores()boolean
+Before: android.permission.REQUEST_NETWORK_SCORES
+Now: android.permission.SCORE_NETWORKS, android.permission.REQUEST_NETWORK_SCORES :: anyOf
+
+android.net.NetworkScoreManager.disableScoring()void
+Before: android.permission.REQUEST_NETWORK_SCORES
+Now: android.permission.SCORE_NETWORKS, android.permission.REQUEST_NETWORK_SCORES :: anyOf
+
+android.net.NetworkScoreManager.setActiveScorer(java.lang.String)boolean
+Before: android.permission.SCORE_NETWORKS
+Now: android.permission.SCORE_NETWORKS, android.permission.REQUEST_NETWORK_SCORES :: anyOf
+
+android.telecom.TelecomManager.endCall()boolean
+Before: android.permission.MODIFY_PHONE_STATE
+Now: android.permission.ANSWER_PHONE_CALLS
+
+android.telephony.PhoneStateListener.onCallStateChanged(int,java.lang.String)void
+Before: android.permission.READ_PHONE_STATE
+Now: android.permission.READ_CALL_LOG
+
+android.telephony.SmsManager.sendTextMessageWithoutPersisting(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)void
+Before: android.permission.MODIFY_PHONE_STATE
+Now: android.permission.MODIFY_PHONE_STATE, android.permission.SEND_SMS :: allOf
+
+android.telephony.TelephonyManager.getDataActivationState(int)int
+Before: android.permission.READ_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE
+
+android.telephony.TelephonyManager.getVoiceActivationState(int)int
+Before: android.permission.READ_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE
+
+android.telephony.TelephonyManager.setCarrierInfoForImsiEncryption(android.telephony.ImsiEncryptionInfo)void
+Before: android.permission.READ_PHONE_STATE
+Now: android.permission.MODIFY_PHONE_STATE

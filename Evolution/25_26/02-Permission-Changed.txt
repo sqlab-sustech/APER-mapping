@@ -1,0 +1,23 @@
+android.content.Context.removeStickyBroadcastAsUser(android.content.Intent,android.os.UserHandle)void
+Before: android.permission.BROADCAST_STICKY
+Now: android.permission.BROADCAST_STICKY, android.permission.INTERACT_ACROSS_USERS :: allOf
+
+android.os.RecoverySystem.installPackage(android.content.Context,java.io.File)void
+Before: android.permission.REBOOT
+Now: android.permission.RECOVERY, android.permission.REBOOT
+
+android.telecom.TelecomManager.placeCall(android.net.Uri,android.os.Bundle)void
+Before: android.permission.CALL_PHONE
+Now: android.permission.MANAGE_OWN_CALLS, android.permission.CALL_PHONE :: anyOf
+
+android.telephony.TelephonyManager.getCellLocation()android.telephony.CellLocation
+Before: android.permission.ACCESS_COARSE_LOCATION
+Now: android.permission.ACCESS_FINE_LOCATION, android.permission.ACCESS_COARSE_LOCATION :: anyOf
+
+android.telephony.TelephonyManager.getLine1Number()java.lang.String
+Before: android.permission.READ_PHONE_STATE, android.permission.READ_SMS
+Now: android.permission.READ_PHONE_NUMBERS, android.permission.READ_PHONE_STATE, android.permission.READ_SMS :: anyOf
+
+android.telephony.TelephonyManager.getLine1Number(int)java.lang.String
+Before: android.permission.READ_PHONE_STATE, android.permission.READ_SMS
+Now: android.permission.READ_PHONE_NUMBERS, android.permission.READ_PHONE_STATE, android.permission.READ_SMS :: anyOf

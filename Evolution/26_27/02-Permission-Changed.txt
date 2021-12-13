@@ -1,0 +1,19 @@
+android.app.WallpaperManager.clearWallpaper(int,int)void
+Before: android.permission.SET_WALLPAPER
+Now: android.permission.INTERACT_ACROSS_USERS_FULL
+
+android.bluetooth.le.BluetoothLeScanner.startScan(java.util.List<android.bluetooth.le.ScanFilter>,android.bluetooth.le.ScanSettings,android.app.PendingIntent)int
+Before: android.permission.BLUETOOTH_ADMIN
+Now: android.permission.ACCESS_FINE_LOCATION, android.permission.BLUETOOTH_ADMIN, android.permission.ACCESS_COARSE_LOCATION
+
+android.companion.CompanionDeviceManager.associate(android.companion.AssociationRequest,android.companion.CompanionDeviceManager$Callback,android.os.Handler)void
+Before: android.permission.USE_DATA_IN_BACKGROUND, android.permission.RUN_IN_BACKGROUND
+Now: android.permission.REQUEST_COMPANION_USE_DATA_IN_BACKGROUND, android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND
+
+android.content.pm.PackageManager.setDefaultBrowserPackageNameAsUser(java.lang.String,int)boolean
+Before: android.permission.SET_PREFERRED_APPLICATIONS
+Now: android.permission.INTERACT_ACROSS_USERS_FULL, android.permission.SET_PREFERRED_APPLICATIONS :: allOf
+
+android.net.ConnectivityManager.isTetheringSupported()boolean
+Before: android.permission.ACCESS_NETWORK_STATE
+Now: android.permission.WRITE_SETTINGS, android.permission.TETHER_PRIVILEGED :: anyOf

@@ -1,0 +1,467 @@
+android.app.ActivityManager.scheduleApplicationInfoChanged(java.util.List<java.lang.String>,int)void :: android.permission.CHANGE_CONFIGURATION
+android.app.ActivityManager.switchUser(android.os.UserHandle)boolean :: android.permission.MANAGE_USERS
+android.app.ActivityTaskManager.clearLaunchParamsForPackages(java.util.List<java.lang.String>)void :: android.permission.MANAGE_ACTIVITY_STACKS
+android.app.ActivityTaskManager.listAllStacks()java.lang.String :: android.permission.MANAGE_ACTIVITY_STACKS
+android.app.ActivityTaskManager.moveTaskToStack(int,int,boolean)void :: android.permission.MANAGE_ACTIVITY_STACKS
+android.app.ActivityTaskManager.moveTopActivityToPinnedStack(int,android.graphics.Rect)boolean :: android.permission.MANAGE_ACTIVITY_STACKS
+android.app.ActivityTaskManager.removeAllVisibleRecentTasks()void :: android.permission.REMOVE_TASKS
+android.app.ActivityTaskManager.removeStacksInWindowingModes(int[])void :: android.permission.MANAGE_ACTIVITY_STACKS
+android.app.ActivityTaskManager.removeStacksWithActivityTypes(int[])void :: android.permission.MANAGE_ACTIVITY_STACKS
+android.app.ActivityTaskManager.resizeDockedStack(android.graphics.Rect,android.graphics.Rect)void :: android.permission.MANAGE_ACTIVITY_STACKS
+android.app.ActivityTaskManager.resizeStack(int,android.graphics.Rect)void :: android.permission.MANAGE_ACTIVITY_STACKS
+android.app.ActivityTaskManager.resizeStack(int,android.graphics.Rect,boolean)void :: android.permission.MANAGE_ACTIVITY_STACKS
+android.app.ActivityTaskManager.resizeTask(int,android.graphics.Rect)void :: android.permission.MANAGE_ACTIVITY_STACKS
+android.app.ActivityTaskManager.setDisplayToSingleTaskInstance(int)void :: android.permission.MANAGE_ACTIVITY_STACKS
+android.app.ActivityTaskManager.setTaskWindowingMode(int,int,boolean)void :: android.permission.MANAGE_ACTIVITY_STACKS
+android.app.ActivityTaskManager.setTaskWindowingModeSplitScreenPrimary(int,int,boolean,boolean,android.graphics.Rect,boolean)void :: android.permission.MANAGE_ACTIVITY_STACKS
+android.app.ActivityTaskManager.startSystemLockTaskMode(int)void :: android.permission.MANAGE_ACTIVITY_STACKS
+android.app.ActivityTaskManager.stopSystemLockTaskMode()void :: android.permission.MANAGE_ACTIVITY_STACKS
+android.app.AlarmManager.setTime(long)void :: android.permission.SET_TIME
+android.app.AlarmManager.setTimeZone(java.lang.String)void :: android.permission.SET_TIME_ZONE
+android.app.AppOpsManager.addHistoricalOps(android.app.AppOpsManager$HistoricalOps)void :: android.permission.MANAGE_APPOPS
+android.app.AppOpsManager.clearHistory()void :: android.permission.MANAGE_APPOPS
+android.app.AppOpsManager.getHistoricalOps(android.app.AppOpsManager$HistoricalOpsRequest,java.util.concurrent.Executor,java.util.function.Consumer<android.app.AppOpsManager$HistoricalOps>)void :: android.permission.GET_APP_OPS_STATS
+android.app.AppOpsManager.getHistoricalOpsFromDiskRaw(android.app.AppOpsManager$HistoricalOpsRequest,java.util.concurrent.Executor,java.util.function.Consumer<android.app.AppOpsManager$HistoricalOps>)void :: android.permission.MANAGE_APPOPS
+android.app.AppOpsManager.getOpsForPackage(int,java.lang.String,java.lang.String...)java.util.List<android.app.AppOpsManager.PackageOps> :: android.permission.GET_APP_OPS_STATS
+android.app.AppOpsManager.getPackagesForOps(java.lang.String[])java.util.List<android.app.AppOpsManager.PackageOps> :: android.permission.GET_APP_OPS_STATS
+android.app.AppOpsManager.offsetHistory(long)void :: android.permission.MANAGE_APPOPS
+android.app.AppOpsManager.reloadNonHistoricalState()void :: android.permission.MANAGE_APPOPS
+android.app.AppOpsManager.resetHistoryParameters()void :: android.permission.MANAGE_APPOPS
+android.app.AppOpsManager.setHistoryParameters(int,long,int)void :: android.permission.MANAGE_APPOPS
+android.app.AppOpsManager.startWatchingNoted(int[],android.app.AppOpsManager$OnOpNotedListener)void :: android.permission.WATCH_APPOPS
+android.app.BroadcastOptions.setBackgroundActivityStartsAllowed(boolean)void :: android.permission.START_ACTIVITIES_FROM_BACKGROUND
+android.app.DownloadManager$Request.setDestinationInExternalPublicDir(java.lang.String,java.lang.String)android.app.DownloadManager.Request :: android.permission.WRITE_EXTERNAL_STORAGE
+android.app.DownloadManager$Request.setDestinationUri(android.net.Uri)android.app.DownloadManager.Request :: android.permission.WRITE_EXTERNAL_STORAGE, android.permission.EXTERNAL_STORAGE, android.permission.WRITE
+android.app.KeyguardManager.getPrivateNotificationsAllowed()boolean :: android.permission.CONTROL_KEYGUARD_SECURE_NOTIFICATIONS
+android.app.KeyguardManager.setPrivateNotificationsAllowed(boolean)void :: android.permission.CONTROL_KEYGUARD_SECURE_NOTIFICATIONS
+android.app.Notification$Builder.setFullScreenIntent(android.app.PendingIntent,boolean)android.app.Notification.Builder :: android.permission.USE_FULL_SCREEN_INTENT
+android.app.StatsManager.getRegisteredExperimentIds()long[] :: android.permission.DUMP, android.permission.PACKAGE_USAGE_STATS :: allOf
+android.app.StatsManager.setActiveConfigsChangedOperation(android.app.PendingIntent)long[] :: android.permission.DUMP, android.permission.PACKAGE_USAGE_STATS :: allOf
+android.app.StatsManager.setPullerCallback(int,android.os.IStatsPullerCallback)void :: android.permission.DUMP, android.permission.PACKAGE_USAGE_STATS :: allOf
+android.app.StatusBarManager.getDisableInfo()android.app.StatusBarManager.DisableInfo :: android.permission.STATUS_BAR
+android.app.StatusBarManager.setDisabledForSetup(boolean)void :: android.permission.STATUS_BAR
+android.app.VrManager.getVr2dDisplayId()int :: android.permission.RESTRICTED_VR_ACCESS
+android.app.VrManager.isPersistentVrModeEnabled()boolean :: android.permission.RESTRICTED_VR_ACCESS, android.permission.ACCESS_VR_STATE :: anyOf
+android.app.VrManager.isVrModeEnabled()boolean :: android.permission.RESTRICTED_VR_ACCESS, android.permission.ACCESS_VR_STATE :: anyOf
+android.app.VrManager.registerVrStateCallback(java.util.concurrent.Executor,android.app.VrStateCallback)void :: android.permission.RESTRICTED_VR_ACCESS, android.permission.ACCESS_VR_STATE :: anyOf
+android.app.admin.DevicePolicyManager.getDeviceOwnerUser()android.os.UserHandle :: android.permission.MANAGE_USERS
+android.app.admin.DevicePolicyManager.getPasswordComplexity()int :: android.permission.REQUEST_PASSWORD_COMPLEXITY
+android.app.admin.DevicePolicyManager.getProfileOwnerAsUser(android.os.UserHandle)android.content.ComponentName :: android.permission.INTERACT_ACROSS_USERS
+android.app.admin.DevicePolicyManager.isManagedKiosk()boolean :: android.permission.MANAGE_USERS
+android.app.admin.DevicePolicyManager.isUnattendedManagedKiosk()boolean :: android.permission.MANAGE_USERS
+android.app.admin.DevicePolicyManager.setProfileOwnerCanAccessDeviceIds(android.content.ComponentName)void :: android.permission.GRANT_PROFILE_OWNER_DEVICE_IDS_ACCESS
+android.app.backup.BackupManager.getCurrentTransportComponent()android.content.ComponentName :: android.permission.BACKUP
+android.app.backup.BackupManager.getDataManagementIntentLabel(java.lang.String)java.lang.CharSequence :: android.permission.BACKUP
+android.app.backup.BackupManager.setAncestralSerialNumber(long)void :: android.permission.BACKUP
+android.app.backup.BackupManager.updateTransportAttributes(android.content.ComponentName,java.lang.String,android.content.Intent,java.lang.String,android.content.Intent,java.lang.CharSequence)void :: android.permission.BACKUP
+android.app.role.RoleControllerManager.isApplicationQualifiedForRole(java.lang.String,java.lang.String,java.util.concurrent.Executor,java.util.function.Consumer<java.lang.Boolean>)void :: android.permission.MANAGE_ROLE_HOLDERS
+android.app.role.RoleControllerManager.isRoleVisible(java.lang.String,java.util.concurrent.Executor,java.util.function.Consumer<java.lang.Boolean>)void :: android.permission.MANAGE_ROLE_HOLDERS
+android.app.role.RoleManager.addOnRoleHoldersChangedListenerAsUser(java.util.concurrent.Executor,android.app.role.OnRoleHoldersChangedListener,android.os.UserHandle)void :: android.permission.OBSERVE_ROLE_HOLDERS
+android.app.role.RoleManager.addRoleHolderAsUser(java.lang.String,java.lang.String,int,android.os.UserHandle,java.util.concurrent.Executor,java.util.function.Consumer<java.lang.Boolean>)void :: android.permission.MANAGE_ROLE_HOLDERS
+android.app.role.RoleManager.addRoleHolderFromController(java.lang.String,java.lang.String)boolean :: android.permission.PERMISSION_MANAGE_ROLES_FROM_CONTROLLER
+android.app.role.RoleManager.clearRoleHoldersAsUser(java.lang.String,int,android.os.UserHandle,java.util.concurrent.Executor,java.util.function.Consumer<java.lang.Boolean>)void :: android.permission.MANAGE_ROLE_HOLDERS
+android.app.role.RoleManager.getDefaultSmsPackage(int)java.lang.String :: android.permission.OBSERVE_ROLE_HOLDERS
+android.app.role.RoleManager.getHeldRolesFromController(java.lang.String)java.util.List<java.lang.String> :: android.permission.PERMISSION_MANAGE_ROLES_FROM_CONTROLLER
+android.app.role.RoleManager.getRoleHolders(java.lang.String)java.util.List<java.lang.String> :: android.permission.MANAGE_ROLE_HOLDERS
+android.app.role.RoleManager.getRoleHoldersAsUser(java.lang.String,android.os.UserHandle)java.util.List<java.lang.String> :: android.permission.MANAGE_ROLE_HOLDERS
+android.app.role.RoleManager.removeOnRoleHoldersChangedListenerAsUser(android.app.role.OnRoleHoldersChangedListener,android.os.UserHandle)void :: android.permission.OBSERVE_ROLE_HOLDERS
+android.app.role.RoleManager.removeRoleHolderAsUser(java.lang.String,java.lang.String,int,android.os.UserHandle,java.util.concurrent.Executor,java.util.function.Consumer<java.lang.Boolean>)void :: android.permission.MANAGE_ROLE_HOLDERS
+android.app.role.RoleManager.removeRoleHolderFromController(java.lang.String,java.lang.String)boolean :: android.permission.PERMISSION_MANAGE_ROLES_FROM_CONTROLLER
+android.app.role.RoleManager.setRoleNamesFromController(java.util.List<java.lang.String>)void :: android.permission.PERMISSION_MANAGE_ROLES_FROM_CONTROLLER
+android.app.trust.TrustManager.clearAllBiometricRecognized(android.hardware.biometrics.BiometricSourceType)void :: android.permission.ACCESS_KEYGUARD_SECURE_STORAGE
+android.app.trust.TrustManager.unlockedByBiometricForUser(int,android.hardware.biometrics.BiometricSourceType)void :: android.permission.ACCESS_KEYGUARD_SECURE_STORAGE
+android.app.usage.UsageEvents$Event.getTaskRootClassName()java.lang.String :: android.permission.PACKAGE_USAGE_STATS
+android.app.usage.UsageEvents$Event.getTaskRootPackageName()java.lang.String :: android.permission.PACKAGE_USAGE_STATS
+android.app.usage.UsageStatsManager.registerAppUsageLimitObserver(int,java.lang.String[],java.time.Duration,java.time.Duration,android.app.PendingIntent)void :: android.permission.OBSERVE_APP_USAGE, android.permission.SUSPEND_APPS :: allOf
+android.app.usage.UsageStatsManager.registerUsageSessionObserver(int,java.lang.String[],java.time.Duration,java.time.Duration,android.app.PendingIntent,android.app.PendingIntent)void :: android.permission.OBSERVE_APP_USAGE
+android.app.usage.UsageStatsManager.reportUsageStart(android.app.Activity,java.lang.String)void :: android.permission.OBSERVE_APP_USAGE
+android.app.usage.UsageStatsManager.reportUsageStart(android.app.Activity,java.lang.String,long)void :: android.permission.OBSERVE_APP_USAGE
+android.app.usage.UsageStatsManager.unregisterAppUsageLimitObserver(int)void :: android.permission.OBSERVE_APP_USAGE, android.permission.SUSPEND_APPS :: allOf
+android.app.usage.UsageStatsManager.unregisterUsageSessionObserver(int)void :: android.permission.OBSERVE_APP_USAGE
+android.bluetooth.BluetoothAdapter.addOnMetadataChangedListener(android.bluetooth.BluetoothDevice,java.util.concurrent.Executor,android.bluetooth.BluetoothAdapter$OnMetadataChangedListener)boolean :: android.permission.BLUETOOTH_PRIVILEGED
+android.bluetooth.BluetoothAdapter.getIoCapability()int :: android.permission.BLUETOOTH_ADMIN
+android.bluetooth.BluetoothAdapter.getLeIoCapability()int :: android.permission.BLUETOOTH_ADMIN
+android.bluetooth.BluetoothAdapter.listenUsingInsecureL2capChannel()android.bluetooth.BluetoothServerSocket :: android.permission.BLUETOOTH
+android.bluetooth.BluetoothAdapter.listenUsingL2capChannel()android.bluetooth.BluetoothServerSocket :: android.permission.BLUETOOTH
+android.bluetooth.BluetoothAdapter.removeOnMetadataChangedListener(android.bluetooth.BluetoothDevice,android.bluetooth.BluetoothAdapter$OnMetadataChangedListener)boolean :: android.permission.BLUETOOTH_PRIVILEGED
+android.bluetooth.BluetoothAdapter.setIoCapability(int)boolean :: android.permission.BLUETOOTH_PRIVILEGED
+android.bluetooth.BluetoothAdapter.setLeIoCapability(int)boolean :: android.permission.BLUETOOTH_PRIVILEGED
+android.bluetooth.BluetoothDevice.createInsecureL2capChannel(int)android.bluetooth.BluetoothSocket :: android.permission.BLUETOOTH
+android.bluetooth.BluetoothDevice.createL2capChannel(int)android.bluetooth.BluetoothSocket :: android.permission.BLUETOOTH
+android.bluetooth.BluetoothDevice.getMetadata(int)byte[] :: android.permission.BLUETOOTH_PRIVILEGED
+android.bluetooth.BluetoothDevice.isInSilenceMode()boolean :: android.permission.BLUETOOTH_PRIVILEGED
+android.bluetooth.BluetoothDevice.setMetadata(int,byte[])boolean :: android.permission.BLUETOOTH_PRIVILEGED
+android.bluetooth.BluetoothDevice.setSilenceMode(boolean)boolean :: android.permission.BLUETOOTH_PRIVILEGED
+android.bluetooth.BluetoothGatt.connect(java.lang.Boolean,android.bluetooth.BluetoothGattCallback,android.os.Handler)boolean :: android.permission.BLUETOOTH
+android.content.ContentProviderClient.setDetectNotResponding(long)void :: android.permission.REMOVE_TASKS
+android.content.ContentResolver.getCache(android.net.Uri)android.os.Bundle :: android.permission.CACHE_CONTENT
+android.content.ContentResolver.putCache(android.net.Uri,android.os.Bundle)void :: android.permission.CACHE_CONTENT
+android.content.om.OverlayManager.getOverlayInfosForTarget(java.lang.String,android.os.UserHandle)java.util.List<android.content.om.OverlayInfo> :: android.permission.INTERACT_ACROSS_USERS_FULL, android.permission.INTERACT_ACROSS_USERS :: anyOf
+android.content.om.OverlayManager.setEnabled(java.lang.String,boolean,android.os.UserHandle)void :: android.permission.INTERACT_ACROSS_USERS_FULL, android.permission.INTERACT_ACROSS_USERS :: anyOf
+android.content.om.OverlayManager.setEnabledExclusiveInCategory(java.lang.String,android.os.UserHandle)void :: android.permission.INTERACT_ACROSS_USERS_FULL, android.permission.INTERACT_ACROSS_USERS :: anyOf
+android.content.pm.CrossProfileApps.startActivity(android.content.ComponentName,android.os.UserHandle)void :: android.permission.INTERACT_ACROSS_PROFILES
+android.content.pm.PackageInstaller$SessionParams.setInstallAsApex()void :: android.permission.INSTALL_PACKAGES
+android.content.pm.PackageInstaller$SessionParams.setStaged()void :: android.permission.INSTALL_PACKAGES
+android.content.pm.PackageInstaller.installExistingPackage(java.lang.String,int,android.content.IntentSender)void :: android.permission.INSTALL_PACKAGES, android.permission.INSTALL_EXISTING_PACKAGES :: allOf
+android.content.pm.PackageManager.addWhitelistedRestrictedPermission(java.lang.String,java.lang.String,int)boolean :: android.permission.WHITELIST_RESTRICTED_PERMISSIONS
+android.content.pm.PackageManager.getApplicationInfoAsUser(java.lang.String,int,android.os.UserHandle)android.content.pm.ApplicationInfo :: android.permission.INTERACT_ACROSS_USERS
+android.content.pm.PackageManager.getDeclaredSharedLibraries(java.lang.String,int)java.util.List<android.content.pm.SharedLibraryInfo> :: android.permission.ACCESS_SHARED_LIBRARIES
+android.content.pm.PackageManager.getUnsuspendablePackages(java.lang.String[])java.lang.String[] :: android.permission.SUSPEND_APPS
+android.content.pm.PackageManager.getWhitelistedRestrictedPermissions(java.lang.String,int)java.util.Set<java.lang.String> :: android.permission.WHITELIST_RESTRICTED_PERMISSIONS
+android.content.pm.PackageManager.queryIntentActivitiesAsUser(android.content.Intent,int,android.os.UserHandle)java.util.List<android.content.pm.ResolveInfo> :: android.permission.INTERACT_ACROSS_USERS
+android.content.pm.PackageManager.queryIntentContentProvidersAsUser(android.content.Intent,int,android.os.UserHandle)java.util.List<android.content.pm.ResolveInfo> :: android.permission.INTERACT_ACROSS_USERS
+android.content.pm.PackageManager.queryIntentServicesAsUser(android.content.Intent,int,android.os.UserHandle)java.util.List<android.content.pm.ResolveInfo> :: android.permission.INTERACT_ACROSS_USERS
+android.content.pm.PackageManager.removeWhitelistedRestrictedPermission(java.lang.String,java.lang.String,int)boolean :: android.permission.WHITELIST_RESTRICTED_PERMISSIONS
+android.content.pm.PackageManager.setApplicationEnabledSetting(java.lang.String,int,int)void :: android.permission.CHANGE_COMPONENT_ENABLED_STATE
+android.content.pm.PackageManager.setComponentEnabledSetting(android.content.ComponentName,int,int)void :: android.permission.CHANGE_COMPONENT_ENABLED_STATE
+android.content.pm.PackageManager.setDistractingPackageRestrictions(java.lang.String[],int)java.lang.String[] :: android.permission.SUSPEND_APPS
+android.content.pm.PackageManager.setPackagesSuspended(java.lang.String[],boolean,android.os.PersistableBundle,android.os.PersistableBundle,android.content.pm.SuspendDialogInfo)java.lang.String[] :: android.permission.SUSPEND_APPS
+android.content.pm.PackageManager.setSyntheticAppDetailsActivityEnabled(java.lang.String,boolean)void :: android.permission.CHANGE_COMPONENT_ENABLED_STATE
+android.content.pm.ShortcutManager.getShareTargets(android.content.IntentFilter)java.util.List<android.content.pm.ShortcutManager.ShareShortcutInfo> :: android.permission.MANAGE_APP_PREDICTIONS
+android.content.rollback.RollbackManager.commitRollback(int,java.util.List<android.content.pm.VersionedPackage>,android.content.IntentSender)void :: android.permission.MANAGE_ROLLBACKS, android.permission.TEST_MANAGE_ROLLBACKS :: anyOf
+android.content.rollback.RollbackManager.expireRollbackForPackage(java.lang.String)void :: android.permission.TEST_MANAGE_ROLLBACKS
+android.content.rollback.RollbackManager.getAvailableRollbacks()java.util.List<android.content.rollback.RollbackInfo> :: android.permission.MANAGE_ROLLBACKS, android.permission.TEST_MANAGE_ROLLBACKS :: anyOf
+android.content.rollback.RollbackManager.getRecentlyCommittedRollbacks()java.util.List<android.content.rollback.RollbackInfo> :: android.permission.MANAGE_ROLLBACKS, android.permission.TEST_MANAGE_ROLLBACKS :: anyOf
+android.content.rollback.RollbackManager.reloadPersistedData()void :: android.permission.TEST_MANAGE_ROLLBACKS
+android.hardware.SensorPrivacyManager.setSensorPrivacy(boolean)void :: android.permission.MANAGE_SENSOR_PRIVACY
+android.hardware.biometrics.BiometricManager.canAuthenticate()int :: android.permission.USE_BIOMETRIC
+android.hardware.biometrics.BiometricManager.canAuthenticate(int)int :: android.permission.USE_BIOMETRIC_INTERNAL
+android.hardware.biometrics.BiometricManager.hasEnrolledBiometrics(int)boolean :: android.permission.USE_BIOMETRIC_INTERNAL
+android.hardware.biometrics.BiometricManager.onConfirmDeviceCredentialError(int,java.lang.String)void :: android.permission.USE_BIOMETRIC_INTERNAL
+android.hardware.biometrics.BiometricManager.onConfirmDeviceCredentialSuccess()void :: android.permission.USE_BIOMETRIC_INTERNAL
+android.hardware.biometrics.BiometricManager.registerCancellationCallback(android.hardware.biometrics.IBiometricConfirmDeviceCredentialCallback)void :: android.permission.USE_BIOMETRIC_INTERNAL
+android.hardware.biometrics.BiometricManager.registerEnabledOnKeyguardCallback(android.hardware.biometrics.IBiometricEnabledOnKeyguardCallback)void :: android.permission.USE_BIOMETRIC_INTERNAL
+android.hardware.biometrics.BiometricManager.resetLockout(byte[])void :: android.permission.USE_BIOMETRIC_INTERNAL
+android.hardware.biometrics.BiometricManager.setActiveUser(int)void :: android.permission.USE_BIOMETRIC_INTERNAL
+android.hardware.biometrics.BiometricPrompt$Builder.setFromConfirmDeviceCredential()android.hardware.biometrics.BiometricPrompt.Builder :: android.permission.USE_BIOMETRIC_INTERNAL
+android.hardware.biometrics.BiometricPrompt$Builder.setUseDefaultTitle()android.hardware.biometrics.BiometricPrompt.Builder :: android.permission.USE_BIOMETRIC_INTERNAL
+android.hardware.biometrics.BiometricPrompt.authenticateUser(android.os.CancellationSignal,java.util.concurrent.Executor,android.hardware.biometrics.BiometricPrompt$AuthenticationCallback,int,android.hardware.biometrics.IBiometricConfirmDeviceCredentialCallback)void :: android.permission.USE_BIOMETRIC_INTERNAL
+android.hardware.camera2.CameraCharacteristics.getKeysNeedingPermission()java.util.List<android.hardware.camera2.CameraCharacteristics.Key<?>> :: android.permission.CAMERA
+android.hardware.display.ColorDisplayManager.getNightDisplayAutoMode()int :: android.permission.CONTROL_DISPLAY_COLOR_TRANSFORMS
+android.hardware.display.ColorDisplayManager.getTransformCapabilities()int :: android.permission.CONTROL_DISPLAY_COLOR_TRANSFORMS
+android.hardware.display.ColorDisplayManager.isDeviceColorManaged()boolean :: android.permission.CONTROL_DISPLAY_COLOR_TRANSFORMS
+android.hardware.display.ColorDisplayManager.isSaturationActivated()boolean :: android.permission.CONTROL_DISPLAY_COLOR_TRANSFORMS
+android.hardware.display.ColorDisplayManager.setAppSaturationLevel(java.lang.String,int)boolean :: android.permission.CONTROL_DISPLAY_COLOR_TRANSFORMS
+android.hardware.display.ColorDisplayManager.setDisplayWhiteBalanceEnabled(boolean)boolean :: android.permission.CONTROL_DISPLAY_COLOR_TRANSFORMS
+android.hardware.display.ColorDisplayManager.setNightDisplayActivated(boolean)boolean :: android.permission.CONTROL_DISPLAY_COLOR_TRANSFORMS
+android.hardware.display.ColorDisplayManager.setNightDisplayAutoMode(int)boolean :: android.permission.CONTROL_DISPLAY_COLOR_TRANSFORMS
+android.hardware.display.ColorDisplayManager.setNightDisplayColorTemperature(int)boolean :: android.permission.CONTROL_DISPLAY_COLOR_TRANSFORMS
+android.hardware.display.ColorDisplayManager.setNightDisplayCustomEndTime(java.time.LocalTime)boolean :: android.permission.CONTROL_DISPLAY_COLOR_TRANSFORMS
+android.hardware.display.ColorDisplayManager.setNightDisplayCustomStartTime(java.time.LocalTime)boolean :: android.permission.CONTROL_DISPLAY_COLOR_TRANSFORMS
+android.hardware.display.ColorDisplayManager.setSaturationLevel(int)boolean :: android.permission.CONTROL_DISPLAY_COLOR_TRANSFORMS
+android.hardware.face.FaceManager.addLockoutResetCallback(android.hardware.face.FaceManager$LockoutResetCallback)void :: android.permission.USE_BIOMETRIC_INTERNAL
+android.hardware.face.FaceManager.authenticate(android.hardware.biometrics.CryptoObject,android.os.CancellationSignal,int,android.hardware.face.FaceManager$AuthenticationCallback,android.os.Handler)void :: android.permission.USE_BIOMETRIC_INTERNAL
+android.hardware.face.FaceManager.enroll(int,byte[],android.os.CancellationSignal,android.hardware.face.FaceManager$EnrollmentCallback,int[])void :: android.permission.MANAGE_BIOMETRIC
+android.hardware.face.FaceManager.generateChallenge()long :: android.permission.MANAGE_BIOMETRIC
+android.hardware.face.FaceManager.getEnrolledFaces()java.util.List<android.hardware.face.Face> :: android.permission.MANAGE_BIOMETRIC
+android.hardware.face.FaceManager.getEnrolledFaces(int)java.util.List<android.hardware.face.Face> :: android.permission.MANAGE_BIOMETRIC
+android.hardware.face.FaceManager.getFeature(int,int,android.hardware.face.FaceManager$GetFeatureCallback)void :: android.permission.MANAGE_BIOMETRIC
+android.hardware.face.FaceManager.hasEnrolledTemplates()boolean :: android.permission.USE_BIOMETRIC_INTERNAL
+android.hardware.face.FaceManager.hasEnrolledTemplates(int)boolean :: android.permission.INTERACT_ACROSS_USERS, android.permission.USE_BIOMETRIC_INTERNAL :: allOf
+android.hardware.face.FaceManager.isHardwareDetected()boolean :: android.permission.USE_BIOMETRIC_INTERNAL
+android.hardware.face.FaceManager.remove(android.hardware.face.Face,int,android.hardware.face.FaceManager$RemovalCallback)void :: android.permission.MANAGE_BIOMETRIC
+android.hardware.face.FaceManager.revokeChallenge()int :: android.permission.MANAGE_BIOMETRIC
+android.hardware.face.FaceManager.setActiveUser(int)void :: android.permission.MANAGE_BIOMETRIC
+android.hardware.face.FaceManager.setFeature(int,int,boolean,byte[],android.hardware.face.FaceManager$SetFeatureCallback)void :: android.permission.MANAGE_BIOMETRIC
+android.hardware.face.FaceManager.userActivity()void :: android.permission.MANAGE_BIOMETRIC
+android.hardware.location.ContextHubManager.createClient(android.hardware.location.ContextHubInfo,android.app.PendingIntent,long)android.hardware.location.ContextHubClient :: android.permission.LOCATION_HARDWARE
+android.hardware.location.ContextHubManager.createClient(android.hardware.location.ContextHubInfo,android.hardware.location.ContextHubClientCallback)android.hardware.location.ContextHubClient :: android.permission.LOCATION_HARDWARE
+android.hardware.location.ContextHubManager.createClient(android.hardware.location.ContextHubInfo,android.hardware.location.ContextHubClientCallback,java.util.concurrent.Executor)android.hardware.location.ContextHubClient :: android.permission.LOCATION_HARDWARE
+android.hardware.usb.UsbManager.enableContaminantDetection(android.hardware.usb.UsbPort,boolean)void :: android.permission.MANAGE_USB
+android.hardware.usb.UsbManager.getPorts()java.util.List<android.hardware.usb.UsbPort> :: android.permission.MANAGE_USB
+android.hardware.usb.UsbPort.getStatus()android.hardware.usb.UsbPortStatus :: android.permission.MANAGE_USB
+android.hardware.usb.UsbPort.setRoles(int,int)void :: android.permission.MANAGE_USB
+android.location.LocationManager.getGnssCapabilities()android.location.GnssCapabilities :: android.permission.ACCESS_FINE_LOCATION
+android.location.LocationManager.injectGnssMeasurementCorrections(android.location.GnssMeasurementCorrections)void :: android.permission.ACCESS_FINE_LOCATION
+android.location.LocationManager.setExtraLocationControllerPackage(java.lang.String)void :: android.permission.LOCATION_HARDWARE
+android.location.LocationManager.setExtraLocationControllerPackageEnabled(boolean)void :: android.permission.LOCATION_HARDWARE
+android.location.LocationManager.setLocationControllerExtraPackage(java.lang.String)void :: android.permission.LOCATION_HARDWARE
+android.location.LocationManager.setLocationControllerExtraPackageEnabled(boolean)void :: android.permission.LOCATION_HARDWARE
+android.location.LocationRequest.setLocationSettingsIgnored(boolean)android.location.LocationRequest :: android.permission.WRITE_SECURE_SETTINGS
+android.media.AudioManager.forceVolumeControlStream(int)void :: android.permission.MODIFY_PHONE_STATE
+android.media.AudioManager.getAudioProductStrategies()java.util.List<android.media.audiopolicy.AudioProductStrategy> :: android.permission.MODIFY_AUDIO_ROUTING
+android.media.AudioManager.getAudioVolumeGroups()java.util.List<android.media.audiopolicy.AudioVolumeGroup> :: android.permission.MODIFY_AUDIO_ROUTING
+android.media.AudioManager.getMaxVolumeIndexForAttributes(android.media.AudioAttributes)int :: android.permission.MODIFY_AUDIO_ROUTING
+android.media.AudioManager.getMinVolumeIndexForAttributes(android.media.AudioAttributes)int :: android.permission.MODIFY_AUDIO_ROUTING
+android.media.AudioManager.getVolumeIndexForAttributes(android.media.AudioAttributes)int :: android.permission.MODIFY_AUDIO_ROUTING
+android.media.AudioManager.setMasterMute(boolean,int)void :: android.permission.MODIFY_AUDIO_ROUTING
+android.media.AudioManager.setVolumeIndexForAttributes(android.media.AudioAttributes,int,int)void :: android.permission.MODIFY_AUDIO_ROUTING
+android.media.AudioManager.unregisterAudioPolicy(android.media.audiopolicy.AudioPolicy)void :: android.permission.MODIFY_AUDIO_ROUTING
+android.media.MediaRouter.setRouterGroupId(java.lang.String)void :: android.permission.CONFIGURE_WIFI_DISPLAY
+android.media.MediaSession2Service.onUpdateNotification(android.media.MediaSession2)android.media.MediaSession2Service.MediaNotification :: android.permission.FOREGROUND_SERVICE
+android.media.soundtrigger.SoundTriggerManager.getModelState(java.util.UUID)int :: android.permission.MANAGE_SOUND_TRIGGER
+android.net.ConnectivityManager.createNattKeepalive(android.net.Network,android.os.ParcelFileDescriptor,java.net.InetAddress,java.net.InetAddress,java.util.concurrent.Executor,android.net.SocketKeepalive$Callback)android.net.SocketKeepalive :: android.permission.PACKET_KEEPALIVE_OFFLOAD
+android.net.ConnectivityManager.createSocketKeepalive(android.net.Network,java.net.Socket,java.util.concurrent.Executor,android.net.SocketKeepalive$Callback)android.net.SocketKeepalive :: android.permission.PACKET_KEEPALIVE_OFFLOAD
+android.net.ConnectivityManager.getAlwaysOnVpnPackageForUser(int)java.lang.String :: android.permission.CONTROL_ALWAYS_ON_VPN
+android.net.ConnectivityManager.getLatestTetheringEntitlementResult(int,boolean,java.util.concurrent.Executor,android.net.ConnectivityManager$OnTetheringEntitlementResultListener)void :: android.permission.TETHER_PRIVILEGED
+android.net.ConnectivityManager.getVpnLockdownWhitelist(int)java.util.List<java.lang.String> :: android.permission.CONTROL_ALWAYS_ON_VPN
+android.net.ConnectivityManager.isVpnLockdownEnabled(int)boolean :: android.permission.CONTROL_ALWAYS_ON_VPN
+android.net.ConnectivityManager.registerTetheringEventCallback(java.util.concurrent.Executor,android.net.ConnectivityManager$OnTetheringEventCallback)void :: android.permission.TETHER_PRIVILEGED
+android.net.ConnectivityManager.setAcceptPartialConnectivity(android.net.Network,boolean,boolean)void :: android.permission.NETWORK_STACK
+android.net.ConnectivityManager.setAlwaysOnVpnPackageForUser(int,java.lang.String,boolean,java.util.List<java.lang.String>)boolean :: android.permission.BIND_VPN_SERVICE, android.permission.CONTROL_ALWAYS_ON_VPN
+android.net.ConnectivityManager.shouldAvoidBadWifi()boolean :: NetworkStack.PERMISSION_MAINLINE_NETWORK_STACK, android.permission.NETWORK_STACK :: anyOf
+android.net.ConnectivityManager.startCaptivePortalApp(android.net.Network,android.os.Bundle)void :: NetworkStack.PERMISSION_MAINLINE_NETWORK_STACK
+android.net.ConnectivityManager.unregisterTetheringEventCallback(android.net.ConnectivityManager$OnTetheringEventCallback)void :: android.permission.TETHER_PRIVILEGED
+android.net.NetworkRequest$Builder.setSignalStrength(int)android.net.NetworkRequest.Builder :: android.permission.NETWORK_SIGNAL_STRENGTH_WAKEUP
+android.net.wifi.WifiManager.addNetworkSuggestions(java.util.List<android.net.wifi.WifiNetworkSuggestion>)int :: android.permission.ACCESS_FINE_LOCATION, android.permission.CHANGE_WIFI_STATE
+android.net.wifi.WifiManager.addOnWifiUsabilityStatsListener(java.util.concurrent.Executor,android.net.wifi.WifiManager$OnWifiUsabilityStatsListener)void :: android.permission.WIFI_UPDATE_USABILITY_STATS_SCORE
+android.net.wifi.WifiManager.connect(android.net.wifi.WifiConfiguration,android.net.wifi.WifiManager$ActionListener)void :: android.permission.NETWORK_SETUP_WIZARD, android.permission.NETWORK_SETTINGS, android.permission.NETWORK_STACK :: anyOf
+android.net.wifi.WifiManager.connect(int,android.net.wifi.WifiManager$ActionListener)void :: android.permission.NETWORK_SETUP_WIZARD, android.permission.NETWORK_SETTINGS, android.permission.NETWORK_STACK :: anyOf
+android.net.wifi.WifiManager.disable(int,android.net.wifi.WifiManager$ActionListener)void :: android.permission.NETWORK_SETUP_WIZARD, android.permission.NETWORK_SETTINGS, android.permission.NETWORK_STACK :: anyOf
+android.net.wifi.WifiManager.disableEphemeralNetwork(java.lang.String)void :: android.permission.NETWORK_SETTINGS, android.permission.NETWORK_STACK :: anyOf
+android.net.wifi.WifiManager.forget(int,android.net.wifi.WifiManager$ActionListener)void :: android.permission.NETWORK_SETUP_WIZARD, android.permission.NETWORK_SETTINGS, android.permission.NETWORK_STACK :: anyOf
+android.net.wifi.WifiManager.getAllMatchingWifiConfigs(java.util.List<android.net.wifi.ScanResult>)java.util.List<android.util.Pair<android.net.wifi.WifiConfiguration,java.util.Map<java.lang.Integer,java.util.List<android.net.wifi.ScanResult>>>> :: android.permission.NETWORK_SETUP_WIZARD, android.permission.NETWORK_SETTINGS :: anyOf
+android.net.wifi.WifiManager.getConfiguredNetworks()java.util.List<android.net.wifi.WifiConfiguration> :: android.permission.ACCESS_WIFI_STATE, android.permission.ACCESS_FINE_LOCATION :: allOf
+android.net.wifi.WifiManager.getFactoryMacAddresses()java.lang.String[] :: android.permission.NETWORK_SETTINGS
+android.net.wifi.WifiManager.getMatchingOsuProviders(java.util.List<android.net.wifi.ScanResult>)java.util.Map<android.net.wifi.hotspot2.OsuProvider,java.util.List<android.net.wifi.ScanResult>> :: android.permission.NETWORK_SETUP_WIZARD, android.permission.NETWORK_SETTINGS :: anyOf
+android.net.wifi.WifiManager.getMatchingPasspointConfigsForOsuProviders(java.util.Set<android.net.wifi.hotspot2.OsuProvider>)java.util.Map<android.net.wifi.hotspot2.OsuProvider,android.net.wifi.hotspot2.PasspointConfiguration> :: android.permission.NETWORK_SETUP_WIZARD, android.permission.NETWORK_SETTINGS :: anyOf
+android.net.wifi.WifiManager.getPasspointConfigurations()java.util.List<android.net.wifi.hotspot2.PasspointConfiguration> :: android.permission.NETWORK_SETUP_WIZARD, android.permission.NETWORK_SETTINGS :: anyOf
+android.net.wifi.WifiManager.notifyUserOfApBandConversion()void :: android.permission.NETWORK_SETTINGS
+android.net.wifi.WifiManager.registerNetworkRequestMatchCallback(android.net.wifi.WifiManager$NetworkRequestMatchCallback,android.os.Handler)void :: android.permission.NETWORK_SETTINGS
+android.net.wifi.WifiManager.registerTrafficStateCallback(android.net.wifi.WifiManager$TrafficStateCallback,android.os.Handler)void :: android.permission.NETWORK_SETTINGS
+android.net.wifi.WifiManager.removeNetworkSuggestions(java.util.List<android.net.wifi.WifiNetworkSuggestion>)int :: android.permission.CHANGE_WIFI_STATE
+android.net.wifi.WifiManager.removeOnWifiUsabilityStatsListener(android.net.wifi.WifiManager$OnWifiUsabilityStatsListener)void :: android.permission.WIFI_UPDATE_USABILITY_STATS_SCORE
+android.net.wifi.WifiManager.removePasspointConfiguration(java.lang.String)void :: android.permission.NETWORK_SETTINGS
+android.net.wifi.WifiManager.save(android.net.wifi.WifiConfiguration,android.net.wifi.WifiManager$ActionListener)void :: android.permission.NETWORK_SETUP_WIZARD, android.permission.NETWORK_SETTINGS, android.permission.NETWORK_STACK :: anyOf
+android.net.wifi.WifiManager.setDeviceMobilityState(int)void :: android.permission.WIFI_SET_DEVICE_MOBILITY_STATE
+android.net.wifi.WifiManager.startEasyConnectAsConfiguratorInitiator(java.lang.String,int,int,java.util.concurrent.Executor,android.net.wifi.EasyConnectStatusCallback)void :: android.permission.NETWORK_SETUP_WIZARD, android.permission.NETWORK_SETTINGS :: anyOf
+android.net.wifi.WifiManager.startEasyConnectAsEnrolleeInitiator(java.lang.String,java.util.concurrent.Executor,android.net.wifi.EasyConnectStatusCallback)void :: android.permission.NETWORK_SETUP_WIZARD, android.permission.NETWORK_SETTINGS :: anyOf
+android.net.wifi.WifiManager.startSubscriptionProvisioning(android.net.wifi.hotspot2.OsuProvider,java.util.concurrent.Executor,android.net.wifi.hotspot2.ProvisioningCallback)void :: android.permission.NETWORK_SETUP_WIZARD, android.permission.NETWORK_SETTINGS :: anyOf
+android.net.wifi.WifiManager.stopEasyConnectSession()void :: android.permission.NETWORK_SETUP_WIZARD, android.permission.NETWORK_SETTINGS :: anyOf
+android.net.wifi.WifiManager.unregisterNetworkRequestMatchCallback(android.net.wifi.WifiManager$NetworkRequestMatchCallback)void :: android.permission.NETWORK_SETTINGS
+android.net.wifi.WifiManager.unregisterTrafficStateCallback(android.net.wifi.WifiManager$TrafficStateCallback)void :: android.permission.NETWORK_SETTINGS
+android.net.wifi.WifiManager.updateWifiUsabilityScore(int,int,int)void :: android.permission.WIFI_UPDATE_USABILITY_STATS_SCORE
+android.net.wifi.WifiScanner.registerScanListener(android.net.wifi.WifiScanner$ScanListener)void :: android.permission.NETWORK_STACK
+android.net.wifi.WifiScanner.setScanningEnabled(boolean)void :: android.permission.NETWORK_STACK
+android.net.wifi.WifiScanner.startDisconnectedPnoScan(android.net.wifi.WifiScanner$ScanSettings,android.net.wifi.WifiScanner$PnoSettings,android.net.wifi.WifiScanner$PnoScanListener)void :: android.permission.NETWORK_STACK
+android.net.wifi.WifiScanner.stopPnoScan(android.net.wifi.WifiScanner$ScanListener)void :: android.permission.NETWORK_STACK
+android.net.wifi.p2p.WifiP2pManager.addLocalService(android.net.wifi.p2p.WifiP2pManager$Channel,android.net.wifi.p2p.nsd.WifiP2pServiceInfo,android.net.wifi.p2p.WifiP2pManager$ActionListener)void :: android.permission.ACCESS_FINE_LOCATION
+android.net.wifi.p2p.WifiP2pManager.connect(android.net.wifi.p2p.WifiP2pManager$Channel,android.net.wifi.p2p.WifiP2pConfig,android.net.wifi.p2p.WifiP2pManager$ActionListener)void :: android.permission.ACCESS_FINE_LOCATION
+android.net.wifi.p2p.WifiP2pManager.createGroup(android.net.wifi.p2p.WifiP2pManager$Channel,android.net.wifi.p2p.WifiP2pConfig,android.net.wifi.p2p.WifiP2pManager$ActionListener)void :: android.permission.ACCESS_FINE_LOCATION
+android.net.wifi.p2p.WifiP2pManager.createGroup(android.net.wifi.p2p.WifiP2pManager$Channel,android.net.wifi.p2p.WifiP2pManager$ActionListener)void :: android.permission.ACCESS_FINE_LOCATION
+android.net.wifi.p2p.WifiP2pManager.discoverPeers(android.net.wifi.p2p.WifiP2pManager$Channel,android.net.wifi.p2p.WifiP2pManager$ActionListener)void :: android.permission.ACCESS_FINE_LOCATION
+android.net.wifi.p2p.WifiP2pManager.discoverServices(android.net.wifi.p2p.WifiP2pManager$Channel,android.net.wifi.p2p.WifiP2pManager$ActionListener)void :: android.permission.ACCESS_FINE_LOCATION
+android.net.wifi.p2p.WifiP2pManager.factoryReset(android.net.wifi.p2p.WifiP2pManager$Channel,android.net.wifi.p2p.WifiP2pManager$ActionListener)void :: android.permission.NETWORK_SETTINGS
+android.net.wifi.p2p.WifiP2pManager.listen(android.net.wifi.p2p.WifiP2pManager$Channel,boolean,android.net.wifi.p2p.WifiP2pManager$ActionListener)void :: android.permission.NETWORK_SETTINGS
+android.net.wifi.p2p.WifiP2pManager.requestDeviceInfo(android.net.wifi.p2p.WifiP2pManager$Channel,android.net.wifi.p2p.WifiP2pManager$DeviceInfoListener)void :: android.permission.ACCESS_FINE_LOCATION
+android.net.wifi.p2p.WifiP2pManager.requestGroupInfo(android.net.wifi.p2p.WifiP2pManager$Channel,android.net.wifi.p2p.WifiP2pManager$GroupInfoListener)void :: android.permission.ACCESS_FINE_LOCATION
+android.net.wifi.p2p.WifiP2pManager.requestOngoingPeerConfig(android.net.wifi.p2p.WifiP2pManager$Channel,android.net.wifi.p2p.WifiP2pManager$OngoingPeerInfoListener)void :: android.permission.NETWORK_STACK
+android.net.wifi.p2p.WifiP2pManager.requestPeers(android.net.wifi.p2p.WifiP2pManager$Channel,android.net.wifi.p2p.WifiP2pManager$PeerListListener)void :: android.permission.ACCESS_FINE_LOCATION
+android.net.wifi.p2p.WifiP2pManager.setOngoingPeerConfig(android.net.wifi.p2p.WifiP2pManager$Channel,android.net.wifi.p2p.WifiP2pConfig,android.net.wifi.p2p.WifiP2pManager$ActionListener)void :: android.permission.NETWORK_STACK
+android.nfc.NfcAdapter.enableSecureNfc(boolean)boolean :: android.permission.WRITE_SECURE_SETTINGS
+android.nfc.cardemulation.CardEmulation.setOffHostForService(android.content.ComponentName,java.lang.String)boolean :: android.permission.NFC
+android.nfc.cardemulation.CardEmulation.unsetOffHostForService(android.content.ComponentName)boolean :: android.permission.NFC
+android.os.BatteryManager.setChargingStateUpdateDelayMillis(int)boolean :: android.permission.POWER_SAVER
+android.os.BugreportManager.cancelBugreport()void :: android.permission.DUMP
+android.os.BugreportManager.startBugreport(android.os.ParcelFileDescriptor,android.os.ParcelFileDescriptor,android.os.BugreportParams,java.util.concurrent.Executor,android.os.BugreportManager$BugreportCallback)void :: android.permission.DUMP
+android.os.DropBoxManager.getNextEntry(java.lang.String,long)android.os.DropBoxManager.Entry :: android.permission.READ_LOGS, android.permission.PACKAGE_USAGE_STATS :: allOf
+android.os.IncidentManager.approveReport(android.net.Uri)void :: android.permission.APPROVE_INCIDENT_REPORTS
+android.os.IncidentManager.cancelAuthorization(android.os.IncidentManager$AuthListener)void :: android.permission.REQUEST_INCIDENT_REPORT_APPROVAL
+android.os.IncidentManager.deleteIncidentReports(android.net.Uri)void :: android.permission.DUMP, android.permission.PACKAGE_USAGE_STATS :: allOf
+android.os.IncidentManager.denyReport(android.net.Uri)void :: android.permission.APPROVE_INCIDENT_REPORTS
+android.os.IncidentManager.getIncidentReport(android.net.Uri)android.os.IncidentManager.IncidentReport :: android.permission.DUMP, android.permission.PACKAGE_USAGE_STATS :: allOf
+android.os.IncidentManager.getIncidentReportList(java.lang.String)java.util.List<android.net.Uri> :: android.permission.DUMP, android.permission.PACKAGE_USAGE_STATS :: allOf
+android.os.IncidentManager.getPendingReports()java.util.List<android.os.IncidentManager.PendingReport> :: android.permission.APPROVE_INCIDENT_REPORTS
+android.os.IncidentManager.requestAuthorization(int,java.lang.String,int,android.os.IncidentManager$AuthListener)void :: android.permission.REQUEST_INCIDENT_REPORT_APPROVAL
+android.os.IncidentManager.requestAuthorization(int,java.lang.String,int,java.util.concurrent.Executor,android.os.IncidentManager$AuthListener)void :: android.permission.REQUEST_INCIDENT_REPORT_APPROVAL
+android.os.PowerManager.dream(long)void :: android.permission.READ_DREAM_STATE, android.permission.WRITE_DREAM_STATE :: allOf
+android.os.PowerManager.forceSuspend()boolean :: android.permission.DEVICE_POWER
+android.os.PowerManager.getPowerSaveModeTrigger()int :: android.permission.POWER_SAVER
+android.os.PowerManager.setAdaptivePowerSaveEnabled(boolean)boolean :: android.permission.POWER_SAVER, android.permission.DEVICE_POWER :: anyOf
+android.os.PowerManager.setAdaptivePowerSavePolicy(android.os.BatterySaverPolicyConfig)boolean :: android.permission.POWER_SAVER, android.permission.DEVICE_POWER :: anyOf
+android.os.PowerManager.setDynamicPowerSaveHint(boolean,int)boolean :: android.permission.POWER_SAVER
+android.os.PowerManager.setPowerSaveModeEnabled(boolean)boolean :: android.permission.POWER_SAVER, android.permission.DEVICE_POWER :: anyOf
+android.os.PowerManager.wakeUp(long,int,java.lang.String)void :: android.permission.DEVICE_POWER
+android.os.PowerManager.wakeUp(long,java.lang.String)void :: android.permission.DEVICE_POWER
+android.os.UserManager.getProfileIds(int,boolean)int[] :: android.permission.MANAGE_USERS, android.permission.CREATE_USERS :: anyOf
+android.os.UserManager.getProfileParent(android.os.UserHandle)android.os.UserHandle :: android.permission.MANAGE_USERS
+android.os.UserManager.getUserIcon()android.graphics.Bitmap :: android.permission.GET_ACCOUNTS_PRIVILEGED, android.permission.MANAGE_USERS :: anyOf
+android.os.UserManager.getUserSwitchability()int :: android.permission.READ_PHONE_STATE, android.permission.MANAGE_USERS, android.permission.INTERACT_ACROSS_USERS :: allOf
+android.os.UserManager.getUsers(boolean,boolean,boolean)java.util.List<android.content.pm.UserInfo> :: android.permission.MANAGE_USERS
+android.os.UserManager.isAdminUser()boolean :: android.permission.MANAGE_USERS
+android.os.UserManager.isGuestUser()boolean :: android.permission.MANAGE_USERS
+android.os.UserManager.isPrimaryUser()boolean :: android.permission.MANAGE_USERS
+android.os.UserManager.isRestrictedProfile()boolean :: android.permission.MANAGE_USERS
+android.os.UserManager.isRestrictedProfile(android.os.UserHandle)boolean :: android.permission.MANAGE_USERS
+android.os.UserManager.preCreateUser(int)android.content.pm.UserInfo :: android.permission.MANAGE_USERS
+android.os.UserManager.removeUser(android.os.UserHandle)boolean :: android.permission.MANAGE_USERS
+android.os.UserManager.setUserIcon(android.graphics.Bitmap)void :: android.permission.MANAGE_USERS
+android.os.UserManager.setUserName(java.lang.String)void :: android.permission.MANAGE_USERS
+android.os.Vibrator.vibrate(int,java.lang.String,android.os.VibrationEffect,java.lang.String,android.media.AudioAttributes)void :: android.permission.VIBRATE
+android.os.image.DynamicSystemClient.bind()void :: android.permission.INSTALL_DYNAMIC_SYSTEM
+android.os.image.DynamicSystemClient.start(android.net.Uri,long)void :: android.permission.INSTALL_DYNAMIC_SYSTEM
+android.os.image.DynamicSystemClient.start(android.net.Uri,long,long)void :: android.permission.INSTALL_DYNAMIC_SYSTEM
+android.os.image.DynamicSystemClient.unbind()void :: android.permission.INSTALL_DYNAMIC_SYSTEM
+android.os.image.DynamicSystemManager$Session.commit()boolean :: android.permission.MANAGE_DYNAMIC_SYSTEM
+android.os.image.DynamicSystemManager$Session.write(byte[])boolean :: android.permission.MANAGE_DYNAMIC_SYSTEM
+android.os.image.DynamicSystemManager.abort()boolean :: android.permission.MANAGE_DYNAMIC_SYSTEM
+android.os.image.DynamicSystemManager.getInstallationProgress()android.gsi.GsiProgress :: android.permission.MANAGE_DYNAMIC_SYSTEM
+android.os.image.DynamicSystemManager.isEnabled()boolean :: android.permission.MANAGE_DYNAMIC_SYSTEM
+android.os.image.DynamicSystemManager.isInUse()boolean :: android.permission.MANAGE_DYNAMIC_SYSTEM
+android.os.image.DynamicSystemManager.isInstalled()boolean :: android.permission.MANAGE_DYNAMIC_SYSTEM
+android.os.image.DynamicSystemManager.remove()boolean :: android.permission.MANAGE_DYNAMIC_SYSTEM
+android.os.image.DynamicSystemManager.setEnable(boolean)boolean :: android.permission.MANAGE_DYNAMIC_SYSTEM
+android.os.image.DynamicSystemManager.startInstallation(long,long)android.os.image.DynamicSystemManager.Session :: android.permission.MANAGE_DYNAMIC_SYSTEM
+android.permission.PermissionControllerManager.countPermissionApps(java.util.List<java.lang.String>,int,android.permission.PermissionControllerManager$OnCountPermissionAppsResultCallback,android.os.Handler)void :: android.permission.GET_RUNTIME_PERMISSIONS
+android.permission.PermissionControllerManager.getAppPermissions(java.lang.String,android.permission.PermissionControllerManager$OnGetAppPermissionResultCallback,android.os.Handler)void :: android.permission.GET_RUNTIME_PERMISSIONS
+android.permission.PermissionControllerManager.getPermissionUsages(boolean,long,java.util.concurrent.Executor,android.permission.PermissionControllerManager$OnPermissionUsageResultCallback)void :: android.permission.GET_RUNTIME_PERMISSIONS
+android.permission.PermissionControllerManager.getRuntimePermissionBackup(android.os.UserHandle,java.util.concurrent.Executor,android.permission.PermissionControllerManager$OnGetRuntimePermissionBackupCallback)void :: android.permission.GET_RUNTIME_PERMISSIONS
+android.permission.PermissionControllerManager.grantOrUpgradeDefaultRuntimePermissions(java.util.concurrent.Executor,java.util.function.Consumer<java.lang.Boolean>)void :: android.permission.ADJUST_RUNTIME_PERMISSIONS_POLICY
+android.permission.PermissionControllerManager.restoreDelayedRuntimePermissionBackup(java.lang.String,android.os.UserHandle,java.util.concurrent.Executor,java.util.function.Consumer<java.lang.Boolean>)void :: android.permission.GRANT_RUNTIME_PERMISSIONS
+android.permission.PermissionControllerManager.restoreRuntimePermissionBackup(byte[],android.os.UserHandle)void :: android.permission.GRANT_RUNTIME_PERMISSIONS
+android.permission.PermissionControllerManager.revokeRuntimePermission(java.lang.String,java.lang.String)void :: android.permission.REVOKE_RUNTIME_PERMISSIONS
+android.permission.PermissionControllerManager.revokeRuntimePermissions(java.util.Map<java.lang.String,java.util.List<java.lang.String>>,boolean,int,java.util.concurrent.Executor,android.permission.PermissionControllerManager$OnRevokeRuntimePermissionsCallback)void :: android.permission.REVOKE_RUNTIME_PERMISSIONS
+android.permission.PermissionControllerManager.setRuntimePermissionGrantStateByDeviceAdmin(java.lang.String,java.lang.String,java.lang.String,int,java.util.concurrent.Executor,java.util.function.Consumer<java.lang.Boolean>)void :: android.permission.GRANT_RUNTIME_PERMISSIONS, android.permission.REVOKE_RUNTIME_PERMISSIONS, android.permission.ADJUST_RUNTIME_PERMISSIONS_POLICY :: allOf
+android.permission.PermissionManager.getRuntimePermissionsVersion()int :: android.permission.ADJUST_RUNTIME_PERMISSIONS_POLICY
+android.permission.PermissionManager.getSplitPermissions()java.util.List<android.permission.PermissionManager.SplitPermissionInfo> :: android.permission.ACCESS_BACKGROUND_LOCATION, android.permission.ACCESS_COARSE_LOCATION
+android.permission.PermissionManager.setRuntimePermissionsVersion(int)void :: android.permission.ADJUST_RUNTIME_PERMISSIONS_POLICY
+android.provider.DeviceConfig.addOnPropertiesChangedListener(java.lang.String,java.util.concurrent.Executor,android.provider.DeviceConfig$OnPropertiesChangedListener)void :: android.permission.READ_DEVICE_CONFIG
+android.provider.DeviceConfig.addOnPropertyChangedListener(java.lang.String,java.util.concurrent.Executor,android.provider.DeviceConfig$OnPropertyChangedListener)void :: android.permission.READ_DEVICE_CONFIG
+android.provider.DeviceConfig.getBoolean(java.lang.String,java.lang.String,boolean)boolean :: android.permission.READ_DEVICE_CONFIG
+android.provider.DeviceConfig.getFloat(java.lang.String,java.lang.String,float)float :: android.permission.READ_DEVICE_CONFIG
+android.provider.DeviceConfig.getInt(java.lang.String,java.lang.String,int)int :: android.permission.READ_DEVICE_CONFIG
+android.provider.DeviceConfig.getLong(java.lang.String,java.lang.String,long)long :: android.permission.READ_DEVICE_CONFIG
+android.provider.DeviceConfig.getProperty(java.lang.String,java.lang.String)java.lang.String :: android.permission.READ_DEVICE_CONFIG
+android.provider.DeviceConfig.getString(java.lang.String,java.lang.String,java.lang.String)java.lang.String :: android.permission.READ_DEVICE_CONFIG
+android.provider.DeviceConfig.resetToDefaults(int,java.lang.String)void :: android.permission.WRITE_DEVICE_CONFIG
+android.provider.DeviceConfig.setProperty(java.lang.String,java.lang.String,java.lang.String,boolean)boolean :: android.permission.WRITE_DEVICE_CONFIG
+android.provider.MediaStore.deleteContributedMedia(android.content.Context,java.lang.String,android.os.UserHandle)void :: android.permission.CLEAR_APP_USER_DATA
+android.provider.MediaStore.getContributedMediaSize(android.content.Context,java.lang.String,android.os.UserHandle)long :: android.permission.CLEAR_APP_USER_DATA
+android.provider.MediaStore.setRequireOriginal(android.net.Uri)android.net.Uri :: android.permission.ACCESS_MEDIA_LOCATION
+android.provider.Settings$Config.getString(android.content.ContentResolver,java.lang.String)java.lang.String :: android.permission.READ_DEVICE_CONFIG
+android.provider.Settings$Config.putString(android.content.ContentResolver,java.lang.String,java.lang.String,boolean)boolean :: android.permission.WRITE_DEVICE_CONFIG
+android.provider.Settings$Config.resetToDefaults(android.content.ContentResolver,int,java.lang.String)void :: android.permission.WRITE_DEVICE_CONFIG
+android.security.keystore.recovery.RecoveryController.importKey(java.lang.String,byte[],byte[])java.security.Key :: android.permission.RECOVER_KEYSTORE
+android.service.oemlock.OemLockManager.getLockName()java.lang.String :: android.permission.MANAGE_CARRIER_OEM_UNLOCK_STATE
+android.telecom.TelecomManager.getCurrentTtyMode()int :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.telecom.TelecomManager.getUserSelectedOutgoingPhoneAccount()android.telecom.PhoneAccountHandle :: android.permission.READ_PHONE_STATE
+android.telecom.TelecomManager.isInEmergencyCall()boolean :: android.permission.MODIFY_PHONE_STATE
+android.telecom.TelecomManager.setUserSelectedOutgoingPhoneAccount(android.telecom.PhoneAccountHandle)void :: android.permission.MODIFY_PHONE_STATE
+android.telephony.AnomalyReporter.initialize(android.content.Context)void :: android.permission.MODIFY_PHONE_STATE
+android.telephony.CarrierConfigManager.overrideConfig(int,android.os.PersistableBundle)void :: android.permission.MODIFY_PHONE_STATE
+android.telephony.PhoneStateListener.onCallDisconnectCauseChanged(int,int)void :: android.permission.READ_PRECISE_PHONE_STATE
+android.telephony.PhoneStateListener.onImsCallDisconnectCauseChanged(android.telephony.ims.ImsReasonInfo)void :: android.permission.READ_PRECISE_PHONE_STATE
+android.telephony.PhoneStateListener.onPreciseCallStateChanged(android.telephony.PreciseCallState)void :: android.permission.READ_PRECISE_PHONE_STATE
+android.telephony.PhoneStateListener.onPreciseDataConnectionStateChanged(android.telephony.PreciseDataConnectionState)void :: android.permission.READ_PRECISE_PHONE_STATE
+android.telephony.SmsManager.checkSmsShortCodeDestination(java.lang.String,java.lang.String)int :: android.permission.READ_PHONE_STATE
+android.telephony.SmsManager.getSmsMessagesForFinancialApp(android.os.Bundle,java.util.concurrent.Executor,android.telephony.SmsManager$FinancialSmsCallback)void :: android.permission.SMS_FINANCIAL_TRANSACTIONS
+android.telephony.SubscriptionManager.addSubscriptionsIntoGroup(java.util.List<java.lang.Integer>,android.os.ParcelUuid)void :: android.permission.MODIFY_PHONE_STATE
+android.telephony.SubscriptionManager.createSubscriptionGroup(java.util.List<java.lang.Integer>)android.os.ParcelUuid :: android.permission.MODIFY_PHONE_STATE
+android.telephony.SubscriptionManager.getEnabledSubscriptionId(int)int :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.telephony.SubscriptionManager.getOpportunisticSubscriptions()java.util.List<android.telephony.SubscriptionInfo> :: android.permission.READ_PHONE_STATE
+android.telephony.SubscriptionManager.getPreferredDataSubscriptionId()int :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.telephony.SubscriptionManager.getSubscriptionsInGroup(android.os.ParcelUuid)java.util.List<android.telephony.SubscriptionInfo> :: android.permission.READ_PHONE_STATE
+android.telephony.SubscriptionManager.isActiveSubscriptionId(int)boolean :: android.permission.READ_PHONE_STATE
+android.telephony.SubscriptionManager.isSubscriptionEnabled(int)boolean :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.telephony.SubscriptionManager.removeSubscriptionsFromGroup(java.util.List<java.lang.Integer>,android.os.ParcelUuid)void :: android.permission.MODIFY_PHONE_STATE
+android.telephony.SubscriptionManager.requestEmbeddedSubscriptionInfoListRefresh(int)void :: android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS
+android.telephony.SubscriptionManager.setDefaultDataSubId(int)void :: android.permission.MODIFY_PHONE_STATE
+android.telephony.SubscriptionManager.setDefaultSmsSubId(int)void :: android.permission.MODIFY_PHONE_STATE
+android.telephony.SubscriptionManager.setOpportunistic(boolean,int)boolean :: android.permission.MODIFY_PHONE_STATE
+android.telephony.SubscriptionManager.setPreferredDataSubscriptionId(int,boolean,java.util.concurrent.Executor,java.util.function.Consumer<java.lang.Integer>)void :: android.permission.MODIFY_PHONE_STATE
+android.telephony.SubscriptionManager.setSubscriptionEnabled(int,boolean)boolean :: android.permission.MODIFY_PHONE_STATE
+android.telephony.SubscriptionManager.switchToSubscription(int,android.app.PendingIntent)void :: android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS
+android.telephony.TelephonyManager.doesSwitchMultiSimConfigTriggerReboot()boolean :: android.permission.READ_PHONE_STATE
+android.telephony.TelephonyManager.enableModemForSlot(int,boolean)boolean :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.getAidForAppType(int)java.lang.String :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.telephony.TelephonyManager.getAvailableNetworks()com.android.internal.telephony.CellNetworkScanResult :: android.permission.MODIFY_PHONE_STATE, android.permission.ACCESS_COARSE_LOCATION :: allOf
+android.telephony.TelephonyManager.getCarrierIdFromMccMnc(java.lang.String)int :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.telephony.TelephonyManager.getCarrierRestrictionRules()android.telephony.CarrierRestrictionRules :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.telephony.TelephonyManager.getCdmaRoamingMode()int :: android.permission.READ_PHONE_STATE
+android.telephony.TelephonyManager.getCertsFromCarrierPrivilegeAccessRules()java.util.List<java.lang.String> :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.telephony.TelephonyManager.getEmergencyNumberList()java.util.Map<java.lang.Integer,java.util.List<android.telephony.emergency.EmergencyNumber>> :: android.permission.READ_PHONE_STATE
+android.telephony.TelephonyManager.getEmergencyNumberList(int)java.util.Map<java.lang.Integer,java.util.List<android.telephony.emergency.EmergencyNumber>> :: android.permission.READ_PHONE_STATE
+android.telephony.TelephonyManager.getIsimDomain()java.lang.String :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.telephony.TelephonyManager.getIsimIst()java.lang.String :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.telephony.TelephonyManager.getLogicalToPhysicalSlotMapping()java.util.Map<java.lang.Integer,java.lang.Integer> :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.telephony.TelephonyManager.getMergedSubscriberIdsFromGroup()java.lang.String[] :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.telephony.TelephonyManager.getNetworkSelectionMode()int :: android.permission.READ_PHONE_STATE
+android.telephony.TelephonyManager.getNumberOfModemsWithSimultaneousDataConnections()int :: android.permission.READ_PHONE_STATE
+android.telephony.TelephonyManager.getPreferredNetworkTypeBitmask()long :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.telephony.TelephonyManager.getPreferredOpportunisticDataSubscription()int :: android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.READ_PHONE_STATE :: anyOf
+android.telephony.TelephonyManager.getRadioPowerState()int :: android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.READ_PHONE_STATE :: anyOf
+android.telephony.TelephonyManager.getSimLocale()java.util.Locale :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.telephony.TelephonyManager.getSupportedRadioAccessFamily()long :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.telephony.TelephonyManager.getUiccCardsInfo()java.util.List<android.telephony.UiccCardInfo> :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.telephony.TelephonyManager.iccCloseLogicalChannelBySlot(int,int)boolean :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.iccOpenLogicalChannelBySlot(int,java.lang.String,int)android.telephony.IccOpenLogicalChannelResponse :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.iccTransmitApduBasicChannelBySlot(int,int,int,int,int,int,java.lang.String)java.lang.String :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.iccTransmitApduLogicalChannelBySlot(int,int,int,int,int,int,int,java.lang.String)java.lang.String :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.isDataAllowedInVoiceCall()boolean :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.telephony.TelephonyManager.isDataRoamingEnabled()boolean :: android.permission.READ_PHONE_STATE, android.permission.ACCESS_NETWORK_STATE :: anyOf
+android.telephony.TelephonyManager.isEmergencyAssistanceEnabled()boolean :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.telephony.TelephonyManager.isInEmergencySmsMode()boolean :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.telephony.TelephonyManager.isManualNetworkSelectionAllowed()boolean :: android.permission.READ_PHONE_STATE
+android.telephony.TelephonyManager.isMultiSimSupported()int :: android.permission.READ_PHONE_STATE
+android.telephony.TelephonyManager.isOpportunisticNetworkEnabled()boolean :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.telephony.TelephonyManager.isPotentialEmergencyNumber(java.lang.String)boolean :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.telephony.TelephonyManager.rebootRadio()boolean :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.requestCellInfoUpdate(android.os.WorkSource,java.util.concurrent.Executor,android.telephony.TelephonyManager$CellInfoCallback)void :: android.permission.ACCESS_FINE_LOCATION, android.permission.MODIFY_PHONE_STATE :: allOf
+android.telephony.TelephonyManager.requestCellInfoUpdate(java.util.concurrent.Executor,android.telephony.TelephonyManager$CellInfoCallback)void :: android.permission.ACCESS_FINE_LOCATION
+android.telephony.TelephonyManager.requestNumberVerification(android.telephony.PhoneNumberRange,long,java.util.concurrent.Executor,android.telephony.NumberVerificationCallback)void :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.resetRadioConfig()boolean :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.setCarrierDataEnabled(boolean)void :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.setCarrierRestrictionRules(android.telephony.CarrierRestrictionRules)int :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.setCarrierTestOverride(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)void :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.setCdmaRoamingMode(int)boolean :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.setCdmaSubscriptionMode(int)boolean :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.setDataAllowedDuringVoiceCall(boolean)boolean :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.setDataRoamingEnabled(boolean)void :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.setMultiSimCarrierRestriction(boolean)void :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.setNetworkSelectionModeManual(com.android.internal.telephony.OperatorInfo,boolean)boolean :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.setOpportunisticNetworkState(boolean)boolean :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.setPreferredNetworkTypeBitmask(long)boolean :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.setPreferredOpportunisticDataSubscription(int,boolean,java.util.concurrent.Executor,java.util.function.Consumer<java.lang.Integer>)void :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.switchMultiSimConfig(int)void :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.updateAvailableNetworks(java.util.List<android.telephony.AvailableNetworkInfo>,java.util.concurrent.Executor,java.util.function.Consumer<java.lang.Integer>)void :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyScanManager.requestNetworkScan(int,android.telephony.NetworkScanRequest,java.util.concurrent.Executor,android.telephony.TelephonyScanManager$NetworkScanCallback,java.lang.String)android.telephony.NetworkScan :: android.permission.MODIFY_PHONE_STATE, android.permission.ACCESS_COARSE_LOCATION
+android.telephony.ims.ImsMmTelManager.getVoWiFiModeSetting()int :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.telephony.ims.ImsMmTelManager.getVoWiFiRoamingModeSetting()int :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.telephony.ims.ImsMmTelManager.isAdvancedCallingSettingEnabled()boolean :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.telephony.ims.ImsMmTelManager.isAvailable(int,int)boolean :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.telephony.ims.ImsMmTelManager.isCapable(int,int)boolean :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.telephony.ims.ImsMmTelManager.isTtyOverVolteEnabled()boolean :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.telephony.ims.ImsMmTelManager.isVoWiFiRoamingSettingEnabled()boolean :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.telephony.ims.ImsMmTelManager.isVoWiFiSettingEnabled()boolean :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.telephony.ims.ImsMmTelManager.isVtSettingEnabled()boolean :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.telephony.ims.ImsMmTelManager.registerImsRegistrationCallback(java.util.concurrent.Executor,android.telephony.ims.ImsMmTelManager$RegistrationCallback)void :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.telephony.ims.ImsMmTelManager.registerMmTelCapabilityCallback(java.util.concurrent.Executor,android.telephony.ims.ImsMmTelManager$CapabilityCallback)void :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.telephony.ims.ImsMmTelManager.setAdvancedCallingSettingEnabled(boolean)void :: android.permission.MODIFY_PHONE_STATE
+android.telephony.ims.ImsMmTelManager.setRttCapabilitySetting(boolean)void :: android.permission.MODIFY_PHONE_STATE
+android.telephony.ims.ImsMmTelManager.setVoWiFiModeSetting(int)void :: android.permission.MODIFY_PHONE_STATE
+android.telephony.ims.ImsMmTelManager.setVoWiFiNonPersistent(boolean,int)void :: android.permission.MODIFY_PHONE_STATE
+android.telephony.ims.ImsMmTelManager.setVoWiFiRoamingModeSetting(int)void :: android.permission.MODIFY_PHONE_STATE
+android.telephony.ims.ImsMmTelManager.setVoWiFiRoamingSettingEnabled(boolean)void :: android.permission.MODIFY_PHONE_STATE
+android.telephony.ims.ImsMmTelManager.setVoWiFiSettingEnabled(boolean)void :: android.permission.MODIFY_PHONE_STATE
+android.telephony.ims.ImsMmTelManager.setVtSettingEnabled(boolean)void :: android.permission.MODIFY_PHONE_STATE
+android.telephony.ims.ImsMmTelManager.unregisterImsRegistrationCallback(android.telephony.ims.ImsMmTelManager$RegistrationCallback)void :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.telephony.ims.ImsMmTelManager.unregisterMmTelCapabilityCallback(android.telephony.ims.ImsMmTelManager$CapabilityCallback)void :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.telephony.ims.ProvisioningManager.getProvisioningIntValue(int)int :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.telephony.ims.ProvisioningManager.getProvisioningStatusForCapability(int,int)boolean :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.telephony.ims.ProvisioningManager.getProvisioningStringValue(int)java.lang.String :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.telephony.ims.ProvisioningManager.registerProvisioningChangedCallback(java.util.concurrent.Executor,android.telephony.ims.ProvisioningManager$Callback)void :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.telephony.ims.ProvisioningManager.setProvisioningIntValue(int,int)int :: android.permission.MODIFY_PHONE_STATE
+android.telephony.ims.ProvisioningManager.setProvisioningStatusForCapability(int,int,boolean)void :: android.permission.MODIFY_PHONE_STATE
+android.telephony.ims.ProvisioningManager.setProvisioningStringValue(int,java.lang.String)int :: android.permission.MODIFY_PHONE_STATE
+android.telephony.ims.ProvisioningManager.unregisterProvisioningChangedCallback(android.telephony.ims.ProvisioningManager$Callback)void :: android.permission.READ_PRIVILEGED_PHONE_STATE
+android.util.StatsLog.logBinaryPushStateChanged(java.lang.String,long,int,int,long[])boolean :: android.permission.DUMP, android.permission.PACKAGE_USAGE_STATS :: allOf
+android.util.StatsLog.logWatchdogRollbackOccurred(int,java.lang.String,long,int,java.lang.String)boolean :: android.permission.DUMP, android.permission.PACKAGE_USAGE_STATS :: allOf
+android.view.accessibility.AccessibilityManager.getAccessibilityShortcutService()java.lang.String :: android.permission.MANAGE_ACCESSIBILITY
+android.view.accessibility.AccessibilityManager.performAccessibilityShortcut()void :: android.permission.MANAGE_ACCESSIBILITY
+android.view.inputmethod.InputMethodManager.getEnabledInputMethodListAsUser(int)java.util.List<android.view.inputmethod.InputMethodInfo> :: android.permission.INTERACT_ACROSS_USERS_FULL
+android.view.inputmethod.InputMethodManager.getInputMethodListAsUser(int)java.util.List<android.view.inputmethod.InputMethodInfo> :: android.permission.INTERACT_ACROSS_USERS_FULL
+android.view.inputmethod.InputMethodManager.setInputMethod(android.os.IBinder,java.lang.String)void :: android.permission.WRITE_SECURE_SETTINGS
+android.view.inputmethod.InputMethodManager.setInputMethodAndSubtype(android.os.IBinder,java.lang.String,android.view.inputmethod.InputMethodSubtype)void :: android.permission.WRITE_SECURE_SETTINGS
+android.view.inputmethod.InputMethodManager.showInputMethodPickerFromSystem(boolean,int)void :: android.permission.WRITE_SECURE_SETTINGS
+android.widget.TextView.setTextOperationUser(android.os.UserHandle)void :: android.permission.INTERACT_ACROSS_USERS_FULL
+com.android.internal.telephony.TelephonyPermissions.enforeceCallingOrSelfReadPhoneStatePermissionOrCarrierPrivilege(android.content.Context,int,java.lang.String)void :: android.permission.READ_PHONE_STATE
+com.android.internal.telephony.TelephonyPermissions.enforeceCallingOrSelfReadPrivilegedPhoneStatePermissionOrCarrierPrivilege(android.content.Context,int,java.lang.String)void :: android.permission.READ_PRIVILEGED_PHONE_STATE
+com.android.server.connectivity.Vpn.setAlwaysOnPackage(java.lang.String,boolean,java.util.List<java.lang.String>)boolean :: android.permission.BIND_VPN_SERVICE
+com.android.server.content.ContentService.getCache(java.lang.String,android.net.Uri,int)android.os.Bundle :: android.permission.CACHE_CONTENT
+com.android.server.content.ContentService.putCache(java.lang.String,android.net.Uri,android.os.Bundle,int)void :: android.permission.CACHE_CONTENT
+com.android.server.inputmethod.InputMethodManagerService$ShellCommandImpl.onCommand(java.lang.String)int :: android.permission.INTERACT_ACROSS_USERS_FULL, android.permission.DUMP, android.permission.WRITE_SECURE_SETTINGS :: allOf
+com.android.server.location.LocationPermissionUtil.doesCallerReportToAppOps(android.content.Context,com.android.server.location.CallerIdentity)boolean :: android.permission.LOCATION_HARDWARE, android.permission.UPDATE_APP_OPS_STATS
+com.android.server.os.BugreportManagerServiceImpl.cancelBugreport()void :: android.permission.DUMP
+com.android.server.os.BugreportManagerServiceImpl.setListener(java.lang.String,android.os.IDumpstateListener,boolean)android.os.IDumpstateToken :: android.permission.DUMP
+com.android.server.os.BugreportManagerServiceImpl.startBugreport(int,java.lang.String,java.io.FileDescriptor,java.io.FileDescriptor,int,android.os.IDumpstateListener)void :: android.permission.DUMP
+com.android.server.pm.UserManagerService.hasManageUsersOrPermission(java.lang.String)boolean :: android.permission.MANAGE_USERS

@@ -1,0 +1,25 @@
+android.app.ActivityManager.getRecentTasksForUser(int,int,int)java.util.List<android.app.ActivityManager.RecentTaskInfo> :: android.permission.INTERACT_ACROSS_USERS_FULL
+android.bluetooth.BluetoothInputDevice.connect(android.bluetooth.BluetoothDevice)boolean :: android.permission.BLUETOOTH_ADMIN
+android.bluetooth.BluetoothInputDevice.disconnect(android.bluetooth.BluetoothDevice)boolean :: android.permission.BLUETOOTH_ADMIN
+android.bluetooth.BluetoothInputDevice.getIdleTime(android.bluetooth.BluetoothDevice)boolean :: android.permission.BLUETOOTH_ADMIN
+android.bluetooth.BluetoothInputDevice.getPriority(android.bluetooth.BluetoothDevice)int :: android.permission.BLUETOOTH
+android.bluetooth.BluetoothInputDevice.getProtocolMode(android.bluetooth.BluetoothDevice)boolean :: android.permission.BLUETOOTH_ADMIN
+android.bluetooth.BluetoothInputDevice.getReport(android.bluetooth.BluetoothDevice,byte,byte,int)boolean :: android.permission.BLUETOOTH_ADMIN
+android.bluetooth.BluetoothInputDevice.sendData(android.bluetooth.BluetoothDevice,java.lang.String)boolean :: android.permission.BLUETOOTH_ADMIN
+android.bluetooth.BluetoothInputDevice.setIdleTime(android.bluetooth.BluetoothDevice,byte)boolean :: android.permission.BLUETOOTH_ADMIN
+android.bluetooth.BluetoothInputDevice.setPriority(android.bluetooth.BluetoothDevice,int)boolean :: android.permission.BLUETOOTH_ADMIN
+android.bluetooth.BluetoothInputDevice.setProtocolMode(android.bluetooth.BluetoothDevice,int)boolean :: android.permission.BLUETOOTH_ADMIN
+android.bluetooth.BluetoothInputDevice.setReport(android.bluetooth.BluetoothDevice,byte,java.lang.String)boolean :: android.permission.BLUETOOTH_ADMIN
+android.bluetooth.BluetoothInputDevice.virtualUnplug(android.bluetooth.BluetoothDevice)boolean :: android.permission.BLUETOOTH_ADMIN
+android.content.Context.startActivitiesAsUser(android.content.Intent[],android.os.Bundle,android.os.UserHandle)void :: android.permission.INTERACT_ACROSS_USERS_FULL
+android.net.ConnectivityManager.isActiveNetworkMeteredForUid(int)boolean :: android.permission.CONNECTIVITY_INTERNAL
+android.net.TrafficStats.clearThreadStatsUid()void :: android.permission.UPDATE_DEVICE_STATS
+android.net.TrafficStats.setThreadStatsUid(int)void :: android.permission.UPDATE_DEVICE_STATS
+android.net.wifi.WifiManager.getConnectionStatistics()android.net.wifi.WifiConnectionStatistics :: android.permission.READ_WIFI_CREDENTIAL
+android.net.wifi.WifiManager.setWifiApEnabled(android.net.wifi.WifiConfiguration,boolean)boolean :: android.permission.TETHER_PRIVILEGED
+android.os.IncidentManager.reportIncident(java.lang.String,byte[])void :: android.permission.DUMP, android.permission.PACKAGE_USAGE_STATS :: allOf
+android.os.PowerManager.setBacklightBrightness(int)void :: android.permission.DEVICE_POWER
+android.telephony.TelephonyManager.setNetworkSelectionModeAutomatic(int)void :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.setNetworkSelectionModeManual(int,com.android.internal.telephony.OperatorInfo,boolean)boolean :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.setVisualVoicemailSmsFilterSettings(android.telephony.VisualVoicemailSmsFilterSettings)void :: android.permission.READ_PHONE_STATE
+android.telephony.TelephonyScanManager.requestNetworkScan(int,android.telephony.NetworkScanRequest,android.telephony.TelephonyScanManager$NetworkScanCallback)android.telephony.NetworkScan :: android.permission.MODIFY_PHONE_STATE

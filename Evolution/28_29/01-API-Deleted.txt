@@ -1,0 +1,38 @@
+android.app.ActivityManager.removeStacksInWindowingModes(int[])void :: android.permission.MANAGE_ACTIVITY_STACKS
+android.app.ActivityManager.removeStacksWithActivityTypes(int[])void :: android.permission.MANAGE_ACTIVITY_STACKS
+android.app.ActivityManager.resizeStack(int,android.graphics.Rect)void :: android.permission.MANAGE_ACTIVITY_STACKS
+android.app.ActivityManager.setTaskWindowingMode(int,int,boolean)void :: android.permission.MANAGE_ACTIVITY_STACKS
+android.app.ActivityManager.setTaskWindowingModeSplitScreenPrimary(int,int,boolean,boolean,android.graphics.Rect,boolean)void :: android.permission.MANAGE_ACTIVITY_STACKS
+android.app.VrManager.getPersistentVrModeEnabled()boolean :: android.permission.RESTRICTED_VR_ACCESS, android.permission.ACCESS_VR_STATE :: anyOf
+android.app.VrManager.getVrModeEnabled()boolean :: android.permission.RESTRICTED_VR_ACCESS, android.permission.ACCESS_VR_STATE :: anyOf
+android.app.VrManager.registerVrStateCallback(android.app.VrStateCallback,android.os.Handler)void :: android.permission.RESTRICTED_VR_ACCESS, android.permission.ACCESS_VR_STATE :: anyOf
+android.app.trust.TrustManager.clearAllFingerprints()void :: android.permission.ACCESS_KEYGUARD_SECURE_STORAGE
+android.app.trust.TrustManager.unlockedByFingerprintForUser(int)void :: android.permission.ACCESS_KEYGUARD_SECURE_STORAGE
+android.bluetooth.BluetoothHealth.connectChannelToSink(android.bluetooth.BluetoothDevice,android.bluetooth.BluetoothHealthAppConfiguration,int)boolean :: android.permission.BLUETOOTH
+android.bluetooth.BluetoothHealth.registerAppConfiguration(java.lang.String,int,int,int,android.bluetooth.BluetoothHealthCallback)boolean :: android.permission.BLUETOOTH
+android.hardware.input.InputManager.createInputForwarder(int)android.app.IInputForwarder :: android.permission.INJECT_EVENTS
+android.media.MediaPlayer2.setWakeMode(android.content.Context,int)void :: android.permission.WAKE_LOCK
+android.media.MediaPlayer2Impl.setWakeMode(android.content.Context,int)void :: android.permission.WAKE_LOCK
+android.media.soundtrigger.SoundTriggerManager.startRecognition(java.util.UUID,android.app.PendingIntent,android.hardware.soundtrigger.SoundTrigger.RecognitionConfig)int :: android.permission.MANAGE_SOUND_TRIGGER
+android.net.ConnectivityManager.setAlwaysOnVpnPackageForUser(int,java.lang.String,boolean)boolean :: android.permission.BIND_VPN_SERVICE
+android.os.Vibrator.vibrate(int,java.lang.String,android.os.VibrationEffect,android.media.AudioAttributes)void :: android.permission.VIBRATE
+android.security.keystore.recovery.RecoveryController.generateAndStoreKey(java.lang.String,byte[])byte[] :: android.permission.RECOVER_KEYSTORE
+android.security.keystore.recovery.RecoveryController.getAliases(java.lang.String)java.util.List<java.lang.String> :: android.permission.RECOVER_KEYSTORE
+android.security.keystore.recovery.RecoveryController.getRecoveryData()android.security.keystore.recovery.KeyChainSnapshot :: android.permission.RECOVER_KEYSTORE
+android.security.keystore.recovery.RecoveryController.getRecoveryStatus(java.lang.String,java.lang.String)int :: android.permission.RECOVER_KEYSTORE
+android.security.keystore.recovery.RecoveryController.initRecoveryService(java.lang.String,byte[])void :: android.permission.RECOVER_KEYSTORE
+android.security.keystore.recovery.RecoveryController.setRecoveryStatus(java.lang.String,java.lang.String,int)void :: android.permission.RECOVER_KEYSTORE
+android.security.keystore.recovery.RecoverySession.recoverKeys(byte[],java.util.List<android.security.keystore.recovery.WrappedApplicationKey>)java.util.Map<java.lang.String,byte[]> :: android.permission.RECOVER_KEYSTORE
+android.security.keystore.recovery.RecoverySession.start(byte[],byte[],byte[],java.util.List<android.security.keystore.recovery.KeyChainProtectionParams>)byte[] :: android.permission.RECOVER_KEYSTORE
+android.security.keystore.recovery.RecoverySession.start(java.security.cert.CertPath,byte[],byte[],java.util.List<android.security.keystore.recovery.KeyChainProtectionParams>)byte[] :: android.permission.RECOVER_KEYSTORE
+android.service.carrier.CarrierService.notifyCarrierNetworkChange(boolean)void :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.getCellNetworkScanResults(int)com.android.internal.telephony.CellNetworkScanResult :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.getCompleteVoiceMailNumber()java.lang.String :: android.permission.CALL_PRIVILEGED
+android.telephony.TelephonyManager.getCompleteVoiceMailNumber(int)java.lang.String :: android.permission.CALL_PRIVILEGED
+android.telephony.TelephonyScanManager.requestNetworkScan(int,android.telephony.NetworkScanRequest,java.util.concurrent.Executor,android.telephony.TelephonyScanManager$NetworkScanCallback)android.telephony.NetworkScan :: android.permission.MODIFY_PHONE_STATE
+android.view.inputmethod.InputMethodManager.getVrInputMethodList()java.util.List<android.view.inputmethod.InputMethodInfo> :: android.permission.RESTRICTED_VR_ACCESS
+android.widget.TextView.setRestrictedAcrossUser(boolean)void :: android.permission.INTERACT_ACROSS_USERS_FULL
+com.android.server.InputMethodManagerService.handleSetBindInstantServiceAllowed(android.os.ShellCommand)int :: android.permission.MANAGE_BIND_INSTANT_SERVICE
+com.android.server.InputMethodManagerService.handleShellCommandEnableDisableInputMethod(android.os.ShellCommand,boolean)int :: android.permission.WRITE_SECURE_SETTINGS
+com.android.server.InputMethodManagerService.handleShellCommandResetInputMethod(android.os.ShellCommand)int :: android.permission.WRITE_SECURE_SETTINGS
+com.android.server.connectivity.Vpn.setAlwaysOnPackage(java.lang.String,boolean)boolean :: android.permission.BIND_VPN_SERVICE

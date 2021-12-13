@@ -1,0 +1,10 @@
+android.app.WallpaperManager.setBitmap(android.graphics.Bitmap,android.graphics.Rect,boolean,int,int)int :: android.permission.INTERACT_ACROSS_USERS_FULL
+android.net.ConnectivityManager.setAvoidUnvalidated(android.net.Network)void :: android.permission.CONNECTIVITY_INTERNAL
+android.os.RecoverySystem.rebootWipeUserData(android.content.Context,boolean,java.lang.String,boolean)void :: android.permission.REBOOT
+android.telecom.TelecomManager.dumpAnalytics()android.telecom.TelecomAnalytics :: android.permission.DUMP
+android.telephony.TelephonyManager.getNeighboringCellInfo()java.util.List<android.telephony.NeighboringCellInfo> :: android.permission.ACCESS_COARSE_LOCATION
+android.telephony.TelephonyManager.getTelephonyHistograms()java.util.List<android.telephony.TelephonyHistogram> :: android.permission.MODIFY_PHONE_STATE
+android.telephony.TelephonyManager.isVisualVoicemailEnabled(android.telecom.PhoneAccountHandle)boolean :: android.permission.READ_PHONE_STATE
+android.telephony.TelephonyManager.setVisualVoicemailEnabled(android.telecom.PhoneAccountHandle,boolean)void :: android.permission.MODIFY_PHONE_STATE
+android.view.Display.requestColorMode(int)void :: android.permission.CONFIGURE_DISPLAY_COLOR_MODE
+com.android.server.HardwarePropertiesManagerService.enforceHardwarePropertiesRetrievalAllowed(java.lang.String)void :: android.permission.DEVICE_POWER

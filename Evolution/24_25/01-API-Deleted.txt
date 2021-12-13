@@ -1,0 +1,3 @@
+android.os.RecoverySystem.rebootWipeUserData(android.content.Context,boolean,java.lang.String)void :: android.permission.REBOOT
+android.telecom.TelecomManager.dumpAnalytics()java.util.List<android.telecom.ParcelableCallAnalytics> :: android.permission.DUMP
+android.view.Display.requestColorTransform(android.view.Display$ColorTransform)void :: android.permission.CONFIGURE_DISPLAY_COLOR_TRANSFORM

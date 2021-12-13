@@ -1,0 +1,10 @@
+android.bluetooth.BluetoothDevice.createBondOutOfBand(byte[],byte[])boolean :: android.permission.BLUETOOTH_ADMIN
+android.content.pm.PackageManager.getPackageSizeInfo(java.lang.String,int,android.content.pm.IPackageStatsObserver)void :: android.permission.GET_PACKAGE_SIZE
+android.content.pm.PackageManager.installPackage(android.net.Uri,android.app.PackageInstallObserver,int,java.lang.String)void :: android.permission.INSTALL_PACKAGES
+android.content.pm.PackageManager.movePackage(java.lang.String,android.content.pm.IPackageMoveObserver,int)void :: android.permission.MOVE_PACKAGE
+android.hardware.fingerprint.FingerprintManager.enroll(byte[],android.os.CancellationSignal,int,android.hardware.fingerprint.FingerprintManager$EnrollmentCallback)void :: android.permission.MANAGE_FINGERPRINT
+android.hardware.fingerprint.FingerprintManager.remove(android.hardware.fingerprint.Fingerprint,android.hardware.fingerprint.FingerprintManager$RemovalCallback)void :: android.permission.MANAGE_FINGERPRINT
+android.hardware.fingerprint.FingerprintManager.rename(int,java.lang.String)void :: android.permission.MANAGE_FINGERPRINT
+android.media.AudioManager.registerRemoteControlDisplay(android.media.IRemoteControlDisplay)void :: android.permission.MEDIA_CONTENT_CONTROL
+android.media.AudioManager.registerRemoteControlDisplay(android.media.IRemoteControlDisplay,int,int)void :: android.permission.MEDIA_CONTENT_CONTROL
+android.os.UserManager.createSecondaryUser(java.lang.String,int)android.content.pm.UserInfo :: android.permission.MANAGE_USERS

@@ -1,0 +1,343 @@
+android.bluetooth.BluetoothA2dp.setPriority(android.bluetooth.BluetoothDevice,int)boolean
+Before: android.permission.BLUETOOTH_ADMIN
+Now: android.permission.BLUETOOTH_PRIVILEGED
+
+android.bluetooth.BluetoothA2dpSink.connect(android.bluetooth.BluetoothDevice)boolean
+Before: android.permission.BLUETOOTH_ADMIN
+Now: android.permission.BLUETOOTH_PRIVILEGED
+
+android.bluetooth.BluetoothA2dpSink.getPriority(android.bluetooth.BluetoothDevice)int
+Before: android.permission.BLUETOOTH
+Now: android.permission.BLUETOOTH_PRIVILEGED
+
+android.bluetooth.BluetoothA2dpSink.setPriority(android.bluetooth.BluetoothDevice,int)boolean
+Before: android.permission.BLUETOOTH_ADMIN
+Now: android.permission.BLUETOOTH_PRIVILEGED
+
+android.bluetooth.BluetoothDevice.cancelBondProcess()boolean
+Before: android.permission.BLUETOOTH_ADMIN
+Now: android.permission.BLUETOOTH_PRIVILEGED
+
+android.bluetooth.BluetoothDevice.removeBond()boolean
+Before: android.permission.BLUETOOTH_ADMIN
+Now: android.permission.BLUETOOTH_PRIVILEGED
+
+android.bluetooth.BluetoothHearingAid.connect(android.bluetooth.BluetoothDevice)boolean
+Before: android.permission.BLUETOOTH_ADMIN
+Now: android.permission.BLUETOOTH_PRIVILEGED
+
+android.bluetooth.BluetoothHearingAid.disconnect(android.bluetooth.BluetoothDevice)boolean
+Before: android.permission.BLUETOOTH_ADMIN
+Now: android.permission.BLUETOOTH_PRIVILEGED
+
+android.bluetooth.BluetoothHearingAid.getHiSyncId(android.bluetooth.BluetoothDevice)long
+Before: android.permission.BLUETOOTH
+Now: android.permission.BLUETOOTH_PRIVILEGED
+
+android.bluetooth.BluetoothHearingAid.getPriority(android.bluetooth.BluetoothDevice)int
+Before: android.permission.BLUETOOTH
+Now: android.permission.BLUETOOTH_PRIVILEGED
+
+android.bluetooth.BluetoothHearingAid.setPriority(android.bluetooth.BluetoothDevice,int)boolean
+Before: android.permission.BLUETOOTH_ADMIN
+Now: android.permission.BLUETOOTH_PRIVILEGED
+
+android.bluetooth.BluetoothHidHost.connect(android.bluetooth.BluetoothDevice)boolean
+Before: android.permission.BLUETOOTH_ADMIN
+Now: android.permission.BLUETOOTH_PRIVILEGED
+
+android.bluetooth.BluetoothHidHost.disconnect(android.bluetooth.BluetoothDevice)boolean
+Before: android.permission.BLUETOOTH_ADMIN
+Now: android.permission.BLUETOOTH_PRIVILEGED
+
+android.bluetooth.BluetoothHidHost.getPriority(android.bluetooth.BluetoothDevice)int
+Before: android.permission.BLUETOOTH
+Now: android.permission.BLUETOOTH_PRIVILEGED
+
+android.bluetooth.BluetoothHidHost.setPriority(android.bluetooth.BluetoothDevice,int)boolean
+Before: android.permission.BLUETOOTH_ADMIN
+Now: android.permission.BLUETOOTH_PRIVILEGED
+
+android.content.Context.bindServiceAsUser(android.content.Intent,android.content.ServiceConnection,int,android.os.UserHandle)boolean
+Before: android.permission.INTERACT_ACROSS_USERS
+Now: android.permission.INTERACT_ACROSS_USERS, android.permission.INTERACT_ACROSS_PROFILES :: anyOf
+
+android.content.Context.startActivitiesAsUser(android.content.Intent[],android.os.Bundle,android.os.UserHandle)int
+Before: android.permission.INTERACT_ACROSS_USERS_FULL
+Now: android.permission.INTERACT_ACROSS_USERS
+
+android.content.Context.startActivityAsUser(android.content.Intent,android.os.Bundle,android.os.UserHandle)void
+Before: android.permission.INTERACT_ACROSS_USERS_FULL
+Now: android.permission.INTERACT_ACROSS_USERS
+
+android.content.Context.startActivityAsUser(android.content.Intent,android.os.UserHandle)void
+Before: android.permission.INTERACT_ACROSS_USERS_FULL
+Now: android.permission.INTERACT_ACROSS_USERS
+
+android.hardware.biometrics.BiometricManager.canAuthenticate(int)int
+Before: android.permission.USE_BIOMETRIC_INTERNAL
+Now: android.permission.USE_BIOMETRIC
+
+android.hardware.location.ContextHubClient.sendMessageToNanoApp(android.hardware.location.NanoAppMessage)int
+Before: android.permission.LOCATION_HARDWARE
+Now: android.permission.ACCESS_CONTEXT_HUB, android.permission.LOCATION_HARDWARE :: anyOf
+
+android.hardware.location.ContextHubManager.createClient(android.hardware.location.ContextHubInfo,android.app.PendingIntent,long)android.hardware.location.ContextHubClient
+Before: android.permission.LOCATION_HARDWARE
+Now: android.permission.ACCESS_CONTEXT_HUB, android.permission.LOCATION_HARDWARE :: anyOf
+
+android.hardware.location.ContextHubManager.createClient(android.hardware.location.ContextHubInfo,android.hardware.location.ContextHubClientCallback)android.hardware.location.ContextHubClient
+Before: android.permission.LOCATION_HARDWARE
+Now: android.permission.ACCESS_CONTEXT_HUB, android.permission.LOCATION_HARDWARE :: anyOf
+
+android.hardware.location.ContextHubManager.createClient(android.hardware.location.ContextHubInfo,android.hardware.location.ContextHubClientCallback,java.util.concurrent.Executor)android.hardware.location.ContextHubClient
+Before: android.permission.LOCATION_HARDWARE
+Now: android.permission.ACCESS_CONTEXT_HUB, android.permission.LOCATION_HARDWARE :: anyOf
+
+android.hardware.location.ContextHubManager.disableNanoApp(android.hardware.location.ContextHubInfo,long)android.hardware.location.ContextHubTransaction<java.lang.Void>
+Before: android.permission.LOCATION_HARDWARE
+Now: android.permission.ACCESS_CONTEXT_HUB, android.permission.LOCATION_HARDWARE :: anyOf
+
+android.hardware.location.ContextHubManager.enableNanoApp(android.hardware.location.ContextHubInfo,long)android.hardware.location.ContextHubTransaction<java.lang.Void>
+Before: android.permission.LOCATION_HARDWARE
+Now: android.permission.ACCESS_CONTEXT_HUB, android.permission.LOCATION_HARDWARE :: anyOf
+
+android.hardware.location.ContextHubManager.findNanoAppOnHub(int,android.hardware.location.NanoAppFilter)int[]
+Before: android.permission.LOCATION_HARDWARE
+Now: android.permission.ACCESS_CONTEXT_HUB, android.permission.LOCATION_HARDWARE :: anyOf
+
+android.hardware.location.ContextHubManager.getContextHubHandles()int[]
+Before: android.permission.LOCATION_HARDWARE
+Now: android.permission.ACCESS_CONTEXT_HUB, android.permission.LOCATION_HARDWARE :: anyOf
+
+android.hardware.location.ContextHubManager.getContextHubInfo(int)android.hardware.location.ContextHubInfo
+Before: android.permission.LOCATION_HARDWARE
+Now: android.permission.ACCESS_CONTEXT_HUB, android.permission.LOCATION_HARDWARE :: anyOf
+
+android.hardware.location.ContextHubManager.getContextHubs()java.util.List<android.hardware.location.ContextHubInfo>
+Before: android.permission.LOCATION_HARDWARE
+Now: android.permission.ACCESS_CONTEXT_HUB, android.permission.LOCATION_HARDWARE :: anyOf
+
+android.hardware.location.ContextHubManager.getNanoAppInstanceInfo(int)android.hardware.location.NanoAppInstanceInfo
+Before: android.permission.LOCATION_HARDWARE
+Now: android.permission.ACCESS_CONTEXT_HUB, android.permission.LOCATION_HARDWARE :: anyOf
+
+android.hardware.location.ContextHubManager.loadNanoApp(android.hardware.location.ContextHubInfo,android.hardware.location.NanoAppBinary)android.hardware.location.ContextHubTransaction<java.lang.Void>
+Before: android.permission.LOCATION_HARDWARE
+Now: android.permission.ACCESS_CONTEXT_HUB, android.permission.LOCATION_HARDWARE :: anyOf
+
+android.hardware.location.ContextHubManager.loadNanoApp(int,android.hardware.location.NanoApp)int
+Before: android.permission.LOCATION_HARDWARE
+Now: android.permission.ACCESS_CONTEXT_HUB, android.permission.LOCATION_HARDWARE :: anyOf
+
+android.hardware.location.ContextHubManager.queryNanoApps(android.hardware.location.ContextHubInfo)android.hardware.location.ContextHubTransaction<java.util.List<android.hardware.location.NanoAppState>>
+Before: android.permission.LOCATION_HARDWARE
+Now: android.permission.ACCESS_CONTEXT_HUB, android.permission.LOCATION_HARDWARE :: anyOf
+
+android.hardware.location.ContextHubManager.sendMessage(int,int,android.hardware.location.ContextHubMessage)int
+Before: android.permission.LOCATION_HARDWARE
+Now: android.permission.ACCESS_CONTEXT_HUB, android.permission.LOCATION_HARDWARE :: anyOf
+
+android.hardware.location.ContextHubManager.unloadNanoApp(android.hardware.location.ContextHubInfo,long)android.hardware.location.ContextHubTransaction<java.lang.Void>
+Before: android.permission.LOCATION_HARDWARE
+Now: android.permission.ACCESS_CONTEXT_HUB, android.permission.LOCATION_HARDWARE :: anyOf
+
+android.hardware.location.ContextHubManager.unloadNanoApp(int)int
+Before: android.permission.LOCATION_HARDWARE
+Now: android.permission.ACCESS_CONTEXT_HUB, android.permission.LOCATION_HARDWARE :: anyOf
+
+android.net.ConnectivityManager.getActiveNetworkForUid(int)android.net.Network
+Before: android.permission.CONNECTIVITY_INTERNAL
+Now: android.permission.NETWORK_STACK
+
+android.net.ConnectivityManager.getActiveNetworkInfoForUid(int)android.net.NetworkInfo
+Before: android.permission.CONNECTIVITY_INTERNAL
+Now: android.permission.NETWORK_STACK
+
+android.net.ConnectivityManager.getCaptivePortalServerUrl()java.lang.String
+Before: android.permission.LOCAL_MAC_ADDRESS
+Now: android.permission.NETWORK_SETTINGS
+
+android.net.ConnectivityManager.setAirplaneMode(boolean)void
+Before: android.permission.NETWORK_SETUP_WIZARD, android.permission.NETWORK_SETTINGS, android.permission.NETWORK_STACK :: anyOf
+Now: android.permission.NETWORK_AIRPLANE_MODE, android.permission.NETWORK_SETUP_WIZARD, android.permission.NETWORK_SETTINGS, android.permission.NETWORK_STACK :: anyOf
+
+android.net.ConnectivityManager.setGlobalProxy(android.net.ProxyInfo)void
+Before: android.permission.CONNECTIVITY_INTERNAL
+Now: android.permission.NETWORK_STACK
+
+android.net.ConnectivityManager.startCaptivePortalApp(android.net.Network)void
+Before: android.permission.CONNECTIVITY_INTERNAL
+Now: android.permission.NETWORK_SETTINGS
+
+android.net.wifi.WifiManager.removePasspointConfiguration(java.lang.String)void
+Before: android.permission.NETWORK_SETTINGS
+Now: android.permission.NETWORK_CARRIER_PROVISIONING, android.permission.NETWORK_SETTINGS :: anyOf
+
+android.os.Build.getSerial()java.lang.String
+Before: android.permission.READ_PRIVILEGED_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.READ_PHONE_STATE
+
+android.os.UserManager.createProfileForUser(java.lang.String,int,int)android.content.pm.UserInfo
+Before: android.permission.MANAGE_USERS
+Now: android.permission.MANAGE_USERS, android.permission.CREATE_USERS :: anyOf
+
+android.os.UserManager.getEnabledProfiles(int)java.util.List<android.content.pm.UserInfo>
+Before: android.permission.MANAGE_USERS
+Now: android.permission.MANAGE_USERS, android.permission.CREATE_USERS :: anyOf
+
+android.os.UserManager.getProfiles(int)java.util.List<android.content.pm.UserInfo>
+Before: android.permission.MANAGE_USERS
+Now: android.permission.MANAGE_USERS, android.permission.CREATE_USERS :: anyOf
+
+android.os.UserManager.getUserInfo(int)android.content.pm.UserInfo
+Before: android.permission.MANAGE_USERS
+Now: android.permission.MANAGE_USERS, android.permission.CREATE_USERS :: anyOf
+
+android.os.UserManager.isGuestUser()boolean
+Before: android.permission.MANAGE_USERS
+Now: android.permission.MANAGE_USERS, android.permission.CREATE_USERS :: anyOf
+
+android.os.UserManager.isManagedProfile(int)boolean
+Before: android.permission.MANAGE_USERS
+Now: android.permission.MANAGE_USERS, android.permission.INTERACT_ACROSS_USERS :: anyOf
+
+android.os.UserManager.isPrimaryUser()boolean
+Before: android.permission.MANAGE_USERS
+Now: android.permission.MANAGE_USERS, android.permission.CREATE_USERS :: anyOf
+
+android.os.UserManager.isRestrictedProfile(android.os.UserHandle)boolean
+Before: android.permission.MANAGE_USERS
+Now: android.permission.MANAGE_USERS, android.permission.CREATE_USERS :: anyOf
+
+android.os.UserManager.removeUser(android.os.UserHandle)boolean
+Before: android.permission.MANAGE_USERS
+Now: android.permission.MANAGE_USERS, android.permission.CREATE_USERS :: anyOf
+
+android.os.UserManager.removeUser(int)boolean
+Before: android.permission.MANAGE_USERS
+Now: android.permission.MANAGE_USERS, android.permission.CREATE_USERS :: anyOf
+
+android.permission.PermissionManager.getRuntimePermissionsVersion()int
+Before: android.permission.ADJUST_RUNTIME_PERMISSIONS_POLICY
+Now: android.permission.UPGRADE_RUNTIME_PERMISSIONS, android.permission.ADJUST_RUNTIME_PERMISSIONS_POLICY :: anyOf
+
+android.permission.PermissionManager.setRuntimePermissionsVersion(int)void
+Before: android.permission.ADJUST_RUNTIME_PERMISSIONS_POLICY
+Now: android.permission.UPGRADE_RUNTIME_PERMISSIONS, android.permission.ADJUST_RUNTIME_PERMISSIONS_POLICY :: anyOf
+
+android.telecom.TelecomManager.getLine1Number(android.telecom.PhoneAccountHandle)java.lang.String
+Before: android.permission.READ_PHONE_STATE
+Now: android.permission.READ_PHONE_NUMBERS, android.permission.READ_PHONE_STATE, android.permission.READ_SMS :: anyOf
+
+android.telephony.PhoneStateListener.onPreciseDataConnectionStateChanged(android.telephony.PreciseDataConnectionState)void
+Before: android.permission.READ_PRECISE_PHONE_STATE
+Now: android.permission.MODIFY_PHONE_STATE
+
+android.telephony.TelephonyManager.getCarrierInfoForImsiEncryption(int)android.telephony.ImsiEncryptionInfo
+Before: android.permission.READ_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE
+
+android.telephony.TelephonyManager.getCdmaEriIconIndex(int)int
+Before: android.permission.READ_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE
+
+android.telephony.TelephonyManager.getCdmaEriIconMode(int)int
+Before: android.permission.READ_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE
+
+android.telephony.TelephonyManager.getCdmaRoamingMode()int
+Before: android.permission.READ_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE
+
+android.telephony.TelephonyManager.getDeviceId()java.lang.String
+Before: android.permission.READ_PRIVILEGED_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.READ_PHONE_STATE
+
+android.telephony.TelephonyManager.getDeviceId(int)java.lang.String
+Before: android.permission.READ_PRIVILEGED_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.READ_PHONE_STATE
+
+android.telephony.TelephonyManager.getDeviceSoftwareVersion(int)java.lang.String
+Before: android.permission.READ_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE
+
+android.telephony.TelephonyManager.getLteOnCdmaMode(int)int
+Before: android.permission.READ_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE
+
+android.telephony.TelephonyManager.getMeid()java.lang.String
+Before: android.permission.READ_PRIVILEGED_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.READ_PHONE_STATE
+
+android.telephony.TelephonyManager.getMeid(int)java.lang.String
+Before: android.permission.READ_PRIVILEGED_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.READ_PHONE_STATE
+
+android.telephony.TelephonyManager.getMsisdn()java.lang.String
+Before: android.permission.READ_PHONE_STATE
+Now: android.permission.READ_PHONE_NUMBERS, android.permission.READ_PHONE_STATE, android.permission.READ_SMS :: anyOf
+
+android.telephony.TelephonyManager.getMsisdn(int)java.lang.String
+Before: android.permission.READ_PHONE_STATE
+Now: android.permission.READ_PHONE_NUMBERS, android.permission.READ_PHONE_STATE, android.permission.READ_SMS :: anyOf
+
+android.telephony.TelephonyManager.getNai()java.lang.String
+Before: android.permission.READ_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.READ_PHONE_STATE
+
+android.telephony.TelephonyManager.getNetworkSelectionMode()int
+Before: android.permission.READ_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.READ_PRECISE_PHONE_STATE :: anyOf
+
+android.telephony.TelephonyManager.getSimSerialNumber()java.lang.String
+Before: android.permission.READ_PRIVILEGED_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.READ_PHONE_STATE
+
+android.telephony.TelephonyManager.getSimSerialNumber(int)java.lang.String
+Before: android.permission.READ_PRIVILEGED_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.READ_PHONE_STATE
+
+android.telephony.TelephonyManager.getSubscriberId()java.lang.String
+Before: android.permission.READ_PRIVILEGED_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.READ_PHONE_STATE
+
+android.telephony.TelephonyManager.getSubscriberId(int)java.lang.String
+Before: android.permission.READ_PRIVILEGED_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.READ_PHONE_STATE
+
+android.telephony.TelephonyManager.isManualNetworkSelectionAllowed()boolean
+Before: android.permission.READ_PHONE_STATE
+Now: android.permission.READ_PRECISE_PHONE_STATE, android.permission.READ_PRIVILEGED_PHONE_STATE :: anyOf
+
+android.telephony.ims.ImsMmTelManager.getVoWiFiModeSetting()int
+Before: android.permission.READ_PRIVILEGED_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.READ_PRECISE_PHONE_STATE :: anyOf
+
+android.telephony.ims.ImsMmTelManager.isAdvancedCallingSettingEnabled()boolean
+Before: android.permission.READ_PRIVILEGED_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.READ_PRECISE_PHONE_STATE :: anyOf
+
+android.telephony.ims.ImsMmTelManager.isTtyOverVolteEnabled()boolean
+Before: android.permission.READ_PRIVILEGED_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.READ_PRECISE_PHONE_STATE :: anyOf
+
+android.telephony.ims.ImsMmTelManager.isVoWiFiRoamingSettingEnabled()boolean
+Before: android.permission.READ_PRIVILEGED_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.READ_PRECISE_PHONE_STATE :: anyOf
+
+android.telephony.ims.ImsMmTelManager.isVoWiFiSettingEnabled()boolean
+Before: android.permission.READ_PRIVILEGED_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.READ_PRECISE_PHONE_STATE :: anyOf
+
+android.telephony.ims.ImsMmTelManager.isVtSettingEnabled()boolean
+Before: android.permission.READ_PRIVILEGED_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.READ_PRECISE_PHONE_STATE :: anyOf
+
+android.telephony.ims.ImsMmTelManager.registerMmTelCapabilityCallback(java.util.concurrent.Executor,android.telephony.ims.ImsMmTelManager$CapabilityCallback)void
+Before: android.permission.READ_PRIVILEGED_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.READ_PRECISE_PHONE_STATE :: anyOf
+
+android.telephony.ims.ImsMmTelManager.unregisterMmTelCapabilityCallback(android.telephony.ims.ImsMmTelManager$CapabilityCallback)void
+Before: android.permission.READ_PRIVILEGED_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.READ_PRECISE_PHONE_STATE :: anyOf

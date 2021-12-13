@@ -1,0 +1,123 @@
+android.content.pm.PackageManager.getPermissionFlags(java.lang.String,java.lang.String,android.os.UserHandle)int
+Before: android.permission.GRANT_RUNTIME_PERMISSIONS, android.permission.REVOKE_RUNTIME_PERMISSIONS :: anyOf
+Now: android.permission.GRANT_RUNTIME_PERMISSIONS, android.permission.REVOKE_RUNTIME_PERMISSIONS, android.permission.GET_RUNTIME_PERMISSIONS :: anyOf
+
+android.content.pm.PackageManager.installExistingPackageAsUser(java.lang.String,int)int
+Before: android.permission.INTERACT_ACROSS_USERS_FULL, android.permission.INSTALL_PACKAGES :: anyOf
+Now: android.permission.INTERACT_ACROSS_USERS_FULL, android.permission.INSTALL_PACKAGES, android.permission.INSTALL_EXISTING_PACKAGES :: anyOf
+
+android.content.pm.PackageManager.setPackagesSuspended(java.lang.String[],boolean,android.os.PersistableBundle,android.os.PersistableBundle,java.lang.String)java.lang.String[]
+Before: android.permission.MANAGE_USERS, android.permission.SUSPEND_APPS
+Now: android.permission.SUSPEND_APPS
+
+android.net.ConnectivityManager.setAcceptUnvalidated(android.net.Network,boolean,boolean)void
+Before: android.permission.CONNECTIVITY_INTERNAL
+Now: android.permission.NETWORK_SETTINGS
+
+android.net.ConnectivityManager.setAirplaneMode(boolean)void
+Before: android.permission.CONNECTIVITY_INTERNAL
+Now: android.permission.NETWORK_SETUP_WIZARD, android.permission.NETWORK_SETTINGS, android.permission.NETWORK_STACK :: anyOf
+
+android.net.ConnectivityManager.setAvoidUnvalidated(android.net.Network)void
+Before: android.permission.CONNECTIVITY_INTERNAL
+Now: android.permission.NETWORK_SETTINGS
+
+android.net.wifi.WifiManager.getPrivilegedConfiguredNetworks()java.util.List<android.net.wifi.WifiConfiguration>
+Before: android.permission.READ_WIFI_CREDENTIAL
+Now: android.permission.ACCESS_WIFI_STATE, android.permission.ACCESS_FINE_LOCATION, android.permission.READ_WIFI_CREDENTIAL :: allOf
+
+android.net.wifi.WifiManager.getScanResults()java.util.List<android.net.wifi.ScanResult>
+Before: android.permission.ACCESS_FINE_LOCATION, android.permission.ACCESS_COARSE_LOCATION
+Now: android.permission.ACCESS_FINE_LOCATION
+
+android.net.wifi.WifiManager.startLocalOnlyHotspot(android.net.wifi.WifiManager$LocalOnlyHotspotCallback,android.os.Handler)void
+Before: android.permission.ACCESS_COARSE_LOCATION, android.permission.CHANGE_WIFI_STATE
+Now: android.permission.ACCESS_FINE_LOCATION, android.permission.CHANGE_WIFI_STATE
+
+android.net.wifi.WifiManager.watchLocalOnlyHotspot(android.net.wifi.WifiManager$LocalOnlyHotspotObserver,android.os.Handler)void
+Before: android.permission.ACCESS_COARSE_LOCATION
+Now: android.permission.ACCESS_FINE_LOCATION
+
+android.net.wifi.aware.IdentityChangedListener.onIdentityChanged(byte[])void
+Before: android.permission.ACCESS_COARSE_LOCATION
+Now: android.permission.ACCESS_FINE_LOCATION
+
+android.net.wifi.aware.WifiAwareManager.attach(android.net.wifi.aware.AttachCallback,android.net.wifi.aware.IdentityChangedListener,android.os.Handler)void
+Before: android.permission.ACCESS_COARSE_LOCATION
+Now: android.permission.ACCESS_FINE_LOCATION
+
+android.net.wifi.aware.WifiAwareSession.publish(android.net.wifi.aware.PublishConfig,android.net.wifi.aware.DiscoverySessionCallback,android.os.Handler)void
+Before: android.permission.ACCESS_COARSE_LOCATION
+Now: android.permission.ACCESS_FINE_LOCATION
+
+android.net.wifi.aware.WifiAwareSession.subscribe(android.net.wifi.aware.SubscribeConfig,android.net.wifi.aware.DiscoverySessionCallback,android.os.Handler)void
+Before: android.permission.ACCESS_COARSE_LOCATION
+Now: android.permission.ACCESS_FINE_LOCATION
+
+android.os.Build.getSerial()java.lang.String
+Before: android.permission.READ_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE
+
+android.telephony.TelephonyManager.getAllCellInfo()java.util.List<android.telephony.CellInfo>
+Before: android.permission.ACCESS_COARSE_LOCATION
+Now: android.permission.ACCESS_FINE_LOCATION
+
+android.telephony.TelephonyManager.getCellLocation()android.telephony.CellLocation
+Before: android.permission.ACCESS_FINE_LOCATION, android.permission.ACCESS_COARSE_LOCATION :: anyOf
+Now: android.permission.ACCESS_FINE_LOCATION
+
+android.telephony.TelephonyManager.getDeviceId()java.lang.String
+Before: android.permission.READ_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE
+
+android.telephony.TelephonyManager.getDeviceId(int)java.lang.String
+Before: android.permission.READ_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE
+
+android.telephony.TelephonyManager.getImei()java.lang.String
+Before: android.permission.READ_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE
+
+android.telephony.TelephonyManager.getImei(int)java.lang.String
+Before: android.permission.READ_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.READ_PHONE_STATE
+
+android.telephony.TelephonyManager.getMeid()java.lang.String
+Before: android.permission.READ_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE
+
+android.telephony.TelephonyManager.getMeid(int)java.lang.String
+Before: android.permission.READ_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE
+
+android.telephony.TelephonyManager.getPreferredNetworkType(int)int
+Before: android.permission.MODIFY_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE
+
+android.telephony.TelephonyManager.getServiceState()android.telephony.ServiceState
+Before: android.permission.READ_PHONE_STATE
+Now: android.permission.READ_PHONE_STATE, android.permission.ACCESS_COARSE_LOCATION :: allOf
+
+android.telephony.TelephonyManager.getSimSerialNumber()java.lang.String
+Before: android.permission.READ_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE
+
+android.telephony.TelephonyManager.getSimSerialNumber(int)java.lang.String
+Before: android.permission.READ_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE
+
+android.telephony.TelephonyManager.getSubscriberId()java.lang.String
+Before: android.permission.READ_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE
+
+android.telephony.TelephonyManager.getSubscriberId(int)java.lang.String
+Before: android.permission.READ_PHONE_STATE
+Now: android.permission.READ_PRIVILEGED_PHONE_STATE
+
+android.telephony.TelephonyManager.requestNetworkScan(android.telephony.NetworkScanRequest,android.telephony.TelephonyScanManager$NetworkScanCallback)android.telephony.NetworkScan
+Before: android.permission.MODIFY_PHONE_STATE
+Now: android.permission.ACCESS_FINE_LOCATION, android.permission.MODIFY_PHONE_STATE :: allOf
+
+android.telephony.TelephonyManager.requestNetworkScan(android.telephony.NetworkScanRequest,java.util.concurrent.Executor,android.telephony.TelephonyScanManager$NetworkScanCallback)android.telephony.NetworkScan
+Before: android.permission.MODIFY_PHONE_STATE
+Now: android.permission.ACCESS_FINE_LOCATION, android.permission.MODIFY_PHONE_STATE :: allOf

@@ -111,3 +111,4 @@ We used the following branches for each Android version in the framework [code b
 |     28    |        9       | [android-9.0.0_r59](https://android.googlesource.com/platform/frameworks/base/+/refs/tags/android-9.0.0_r59) |
 |     29    |       10       | [android-10.0.0_r41](https://android.googlesource.com/platform/frameworks/base/+/refs/tags/android-10.0.0_r41) |
 |     30    |       11       | [android-11.0.0_r28](https://android.googlesource.com/platform/frameworks/base/+/refs/tags/android-11.0.0_r28) |
+|     31    |       12       | [android-12.0.0_r27](https://android.googlesource.com/platform/frameworks/base/+/refs/tags/android-12.0.0_r27) |
